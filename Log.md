@@ -24,7 +24,6 @@ TODO: review article
 
 # 2.0 Seurat
 
-<h3> Seurat </3>
 
 https://satijalab.org/seurat
 
