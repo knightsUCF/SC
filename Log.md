@@ -29,7 +29,7 @@ https://satijalab.org/seurat
 
 https://github.com/satijalab/seurat
 
-<h3> Installing Seurat </3>
+<h3> Installing Seurat </h3>
 
 Enter these commands in R:
 
