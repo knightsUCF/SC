@@ -14,7 +14,9 @@
 
 2.2 Seurat Documentation
 
-2.3 Guided Clustering Seurat Tutorial (Processing a Seurat Object)
+2.3 Seurat Tutorials
+
+2.4 Guided Clustering Seurat Tutorial (Processing a Seurat Object)
 
 <h4> 3.0 Replicating Results </h4>
 
@@ -117,7 +119,7 @@ Enter these commands in R:
 https://satijalab.org/seurat/vignettes.html
 
 
-<h3> 2.3 Guided Clustering Seurat Tutorial (Processing a Seurat Object) </h3>
+<h3> 2.4 Guided Clustering Seurat Tutorial (Processing a Seurat Object) </h3>
 
 https://satijalab.org/seurat/v3.2/pbmc3k_tutorial.html
 
