@@ -96,7 +96,7 @@ Enter these commands in R:
 https://satijalab.org/seurat/vignettes.html
 
 
-<h3> 2.3 Guided Clustering Seurat Tutorial </h3>
+<h3> 2.3 Guided Clustering Seurat Tutorial (Processing a Seurat Object) </h3>
 
 https://satijalab.org/seurat/v3.2/pbmc3k_tutorial.html
 
