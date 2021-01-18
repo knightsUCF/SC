@@ -100,7 +100,7 @@ https://satijalab.org/seurat/vignettes.html
 
 https://satijalab.org/seurat/v3.2/pbmc3k_tutorial.html
 
-to get this example working, at least on a mac we have to change the line to:
+to get this example working, at least on a Mac we have to change the line to:
 
     pbmc.data <- Read10X(data.dir = "data/filtered_gene_bc_matrices/hg19")
     
