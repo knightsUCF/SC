@@ -38,7 +38,7 @@
 
 # 1.0 Overview
 
-<h1> Goal </h1>
+<h3> Goal </h3>
 
 Goal: replicate results of "Single cell analysis of the cellular heterogeneity and interactions in the injured mouse spinal cord"
 
