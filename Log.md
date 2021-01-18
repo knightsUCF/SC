@@ -9,7 +9,7 @@ Background article:
 https://www.nature.com/articles/s12276-018-0071-8
 
 
-<h3> 1.1 Background Article Notes </h3>
+<h3> 1.1 Nature Background Article Notes </h3>
 
 * "In this review, we will focus on technical challenges in single-cell isolation and library preparation and on computational analysis pipelines available for analyzing scRNA-seq data."
 
