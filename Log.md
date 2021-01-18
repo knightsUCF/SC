@@ -128,6 +128,28 @@ print(pbmc)
 # Active assay: RNA (13714 features, 0 variable features)
 ```
 
+# 3.0 Replicating Results
+
+Here is a place to start replicating the results of the single cell analysis.
+
+https://www.biorxiv.org/content/10.1101/2020.05.13.094854v1.full
+
+"To generate the full SCI dataset, all samples were processed and combined using Seurat v353. After filtering each sample count matrix for genes that were expressed in at least 10 cells, each dataset was independently normalized and scaled using the SCTransform function. SCTransform performs a variance-stabilizing transformation in which genes are grouped according to mean expression in order to smoothen model parameters for negative binomial regression54. To remove cell-cycle genes as a confounding source of variation, mitochondrial percentage and cell cycle scores based on the expression of canonical G2M and S phase markers were computed for each cell. Cell cycle genes were provided through the Seurat tutorial. These score values were then used as input for the “vars.to.regress” argument in the SCTransfrom() function. This operation generates a “corrected” expression matrix by building a regression model on these variables for each gene.
+
+To identify shared and unique molecular cell-types across datasets and time-points, sample expression matrices were batch-corrected using Seurat’s Data Integration workflow55. In brief, data integration uses canonical correlation analysis between two samples to identify mutual nearest neighbors.
+
+These “anchors” are then used to generate a corrected gene expression matrix based on the consistency of the anchors between cells, effectively performing a batch correction.
+
+For the full SCI dataset, the 2000 most variables genes were used as input for the “anchor. features” argument of the FindIntegrationAnchors() function, where the variance of a gene was measured as the residual divided by the expected variance under the SCTransfrom() model. This resulted in a single, batch-corrected expression matrix for containing all cells.
+
+Dimensional Reduction, Clustering, and Differential Gene expression testing
+
+In order to measure the greatest gene expression variation among all the SCI cells, we first performed PCA on the batch-corrected expression matrix for the top 2000 variable genes taken from above. The top 15 principal components (PCs) were selected based on the “elbow” point heuristic in a scree plot which quantifies the contribution of variance by each principal component. Using these components, a nearest-neighbor graph and shared-nearest-neighbor graph were generated with “k.neighbors” set to 20 by default. To visualize the cells, we generate a UMAP plot with default Seurat parameters using cell coordinates in PCA-space using the top 15 PCs. In order to cluster the cells based on similarity of expression, we ran the FindClusters() function on the shared-nearest-neighbor graph with default parameters.
+
+To infer the functional relevance of sub-clusters, we performed gene ontology enrichment analyses on the top 50 differentially expressed genes using Fisher’s Exact test as implemented in the topGO R package48. For the enrichment analyses of the gene expression changes in astrocytes, our initial analysis revealed very few differentially expressed genes between the uninjured and 1dpi astrocytes, which we attributed to the low numbers of uninjured astrocytes captured. Therefore, we supplemented our uninjured astrocyte dataset with ACNT1 and ACNT2 astrocyte data from the previously published mouse CNS single-cell atlas dataset50. We also supplemented our uninjured OPC dataset in order to validate that our uninjured cells were more transcriptional similar to the external reference cells than to our injured cells. To account for differences in sequencing depth between our dataset and the external dataset, we performed differential expression tests using MAST as implemented in Seurat56. We used all differentially expressed genes (p_val_adj < 0.001) as input for gene ontology analysis."
+
+
+
 
 
 
