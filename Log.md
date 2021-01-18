@@ -205,7 +205,6 @@ https://www.ncbi.nlm.nih.gov/biosample/SAMN17339713/
 
 SRA: SRS8040434
 
-https://trace.ncbi.nlm.nih.gov/Traces/sra/?run=SRR6854062
 
 "To assess the cellular heterogeneity among all cell populations at the injury site, we obtained a total of 51,843 cells from uninjured and 1, 3, and 7dpi tissue, which resulted in a total of 15 distinct clusters when visualized on a UMAP plot"
 
