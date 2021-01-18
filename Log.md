@@ -149,6 +149,46 @@ In order to measure the greatest gene expression variation among all the SCI cel
 To infer the functional relevance of sub-clusters, we performed gene ontology enrichment analyses on the top 50 differentially expressed genes using Fisher’s Exact test as implemented in the topGO R package48. For the enrichment analyses of the gene expression changes in astrocytes, our initial analysis revealed very few differentially expressed genes between the uninjured and 1dpi astrocytes, which we attributed to the low numbers of uninjured astrocytes captured. Therefore, we supplemented our uninjured astrocyte dataset with ACNT1 and ACNT2 astrocyte data from the previously published mouse CNS single-cell atlas dataset50. We also supplemented our uninjured OPC dataset in order to validate that our uninjured cells were more transcriptional similar to the external reference cells than to our injured cells. To account for differences in sequencing depth between our dataset and the external dataset, we performed differential expression tests using MAST as implemented in Seurat56. We used all differentially expressed genes (p_val_adj < 0.001) as input for gene ontology analysis."
 
 
+<h3> 3.1 Steps </h3>
+
+Let's start with these steps
+
+steps to "generate the full SCI dataset"
+
+process all samples and combine with Seurat
+
+filter each sample count matrix for genes that were expressed in at least 10 cells
+
+
+# 4.0 Data
+
+"In this study, we used sc-RNAseq to generate a single cell transcriptomics dataset of virtually all cell types that comprise the uninjured and injured spinal cord at 1, 3, and 7dpi. From this dataset, we were able to obtain unique molecular signatures of multiple cell types as well as their subpopulations present throughout the acute injury phase."
+
+"These cell types were grouped into three categories, namely myeloid, vascular, and macroglia, for further analysis as described below."
+
+http://mousebrain.org/
+
+http://mousebrain.org/downloads.html
+
+https://www.ncbi.nlm.nih.gov/biosample/SAMN17339713/
+
+SRA: SRS8040434
+
+https://trace.ncbi.nlm.nih.gov/Traces/sra/?run=SRR6854062
+
+"To assess the cellular heterogeneity among all cell populations at the injury site, we obtained a total of 51,843 cells from uninjured and 1, 3, and 7dpi tissue, which resulted in a total of 15 distinct clusters when visualized on a UMAP plot"
+
+
+normalize and scale each data set with the SCTransform function ("performs variance stabiling transformation in which genes are grouped according to mean expression in order to smoothen model parameters for negative binomial regression"
+
+removing cell-cycle genes as a confounding source of variation: "mitochondrial percentage and cell cycle scores based on the expression of canonical G2M and S phase markers were computed for each cell (Cell cycle genes were provided through the Seurat tutorial)"
+
+These score values were then used as input for the “vars.to.regress” argument in the SCTransfrom() function. (This operation generates a “corrected” expression matrix by building a regression model on these variables for each gene.)
+
+To identify shared and unique molecular cell-types across datasets and time-points, sample expression matrices were batch-corrected using Seurat’s Data Integration workflow (In brief, data integration uses canonical correlation analysis between two samples to identify mutual nearest neighbors.)
+
+These “anchors” are then used to generate a corrected gene expression matrix based on the consistency of the anchors between cells, effectively performing a batch correction.
+
 
 
 
