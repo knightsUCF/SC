@@ -2,11 +2,11 @@
 
 <h3> Contents </h3>
 
-1.0 Overview
+<h4> 1.0 Overview </h4>
 
 1.1 Nature Background Article Notes
 
-2.0 Seurat
+<h4> 2.0 Seurat </h4>
 
 2.1 Installing Seurat
 
@@ -14,11 +14,11 @@
 
 2.3 Guided Clustering Seurat Tutorial (Processing a Seurat Object)
 
-3.0 Replicating Results
+<h4> 3.0 Replicating Results </h4>
 
 3.1 Steps
 
-4.0 Data
+<h4> 4.0 Data </h4>
 
 4.1 Importing Data into Seurat
 
