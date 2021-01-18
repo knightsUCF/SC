@@ -44,5 +44,36 @@ Enter these commands in R:
     remotes::install_github("satijalab/seurat", ref = "release/4.0.0")
 
     remotes::install_github("jlmelville/uwot")
+    
+    
+ <h3> 2.2 Seurat Documentation </h3>
+ 
+ https://satijalab.org/seurat
+ 
+ <h3> 2.3 Seurat Tutorials </h3>
+ 
+* Guided tutorial --- 2,700 PBMCs
+
+* Multiple Dataset Integration and Label Transfer
+
+* Weighted Nearest Neighbor Analysis
+
+* Multimodal Reference Mapping
+
+* Analysis of spatial datasets
+
+* Mouse Cell Atlas, 250K cells
+
+* Multimodal analysis
+
+* Stimulated vs Control PBMCs
+
+* SCTransform
+
+* scATAC-seq + scRNA-seq integration
+
+* Mixscape
+
+https://satijalab.org/seurat/vignettes.html
 
 
