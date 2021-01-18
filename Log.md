@@ -1,6 +1,8 @@
 # Single Cell Analysis
 
-<h3> 1.0 Overview </h3>
+<br>
+
+# 1.0 Overview
 
 Goal: replicate results of "Single cell analysis of the cellular heterogeneity and interactions in the injured mouse spinal cord"
 
