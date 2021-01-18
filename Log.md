@@ -96,3 +96,38 @@ Enter these commands in R:
 https://satijalab.org/seurat/vignettes.html
 
 
+<h3> 2.3 Guided Clustering Seurat Tutorial </h3>
+
+https://satijalab.org/seurat/v3.2/pbmc3k_tutorial.html
+
+to get this example working, at least on a mac we have the line to:
+
+    pbmc.data <- Read10X(data.dir = "data/filtered_gene_bc_matrices/hg19")
+    
+when data folder is on Desktop:
+
+    setwd("/Users/x/Desktop")
+    
+then we can get the Seurat object:
+
+
+    library(dplyr)
+    library(Seurat)
+    library(patchwork)
+
+    pbmc.data <- Read10X(data.dir = "data/filtered_gene_bc_matrices/hg19")
+
+
+    # Initialize the Seurat object with the raw (non-normalized data).
+    pbmc <- CreateSeuratObject(counts = pbmc.data, project = "pbmc3k", min.cells = 3, min.features = 200)
+
+    print(pbmc)
+
+    # An object of class Seurat 
+    # 13714 features across 2700 samples within 1 assay 
+    # Active assay: RNA (13714 features, 0 variable features)
+
+
+
+
+
