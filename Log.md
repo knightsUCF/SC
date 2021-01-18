@@ -110,23 +110,23 @@ when data folder is on Desktop:
     
 then we can get the Seurat object:
 
+```R
+library(dplyr)
+library(Seurat)
+library(patchwork)
 
-    library(dplyr)
-    library(Seurat)
-    library(patchwork)
-
-    pbmc.data <- Read10X(data.dir = "data/filtered_gene_bc_matrices/hg19")
+pbmc.data <- Read10X(data.dir = "data/filtered_gene_bc_matrices/hg19")
 
 
-    # Initialize the Seurat object with the raw (non-normalized data).
-    pbmc <- CreateSeuratObject(counts = pbmc.data, project = "pbmc3k", min.cells = 3, min.features = 200)
+# Initialize the Seurat object with the raw (non-normalized data).
+pbmc <- CreateSeuratObject(counts = pbmc.data, project = "pbmc3k", min.cells = 3, min.features = 200)
 
-    print(pbmc)
+print(pbmc)
 
-    # An object of class Seurat 
-    # 13714 features across 2700 samples within 1 assay 
-    # Active assay: RNA (13714 features, 0 variable features)
-
+# An object of class Seurat 
+# 13714 features across 2700 samples within 1 assay 
+# Active assay: RNA (13714 features, 0 variable features)
+```
 
 
 
