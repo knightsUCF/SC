@@ -159,6 +159,16 @@ process all samples and combine with Seurat
 
 filter each sample count matrix for genes that were expressed in at least 10 cells
 
+normalize and scale each data set with the SCTransform function ("performs variance stabiling transformation in which genes are grouped according to mean expression in order to smoothen model parameters for negative binomial regression"
+
+removing cell-cycle genes as a confounding source of variation: "mitochondrial percentage and cell cycle scores based on the expression of canonical G2M and S phase markers were computed for each cell (Cell cycle genes were provided through the Seurat tutorial)"
+
+These score values were then used as input for the “vars.to.regress” argument in the SCTransfrom() function. (This operation generates a “corrected” expression matrix by building a regression model on these variables for each gene.)
+
+To identify shared and unique molecular cell-types across datasets and time-points, sample expression matrices were batch-corrected using Seurat’s Data Integration workflow (In brief, data integration uses canonical correlation analysis between two samples to identify mutual nearest neighbors.)
+
+These “anchors” are then used to generate a corrected gene expression matrix based on the consistency of the anchors between cells, effectively performing a batch correction.
+
 
 # 4.0 Data
 
@@ -178,18 +188,70 @@ https://trace.ncbi.nlm.nih.gov/Traces/sra/?run=SRR6854062
 
 "To assess the cellular heterogeneity among all cell populations at the injury site, we obtained a total of 51,843 cells from uninjured and 1, 3, and 7dpi tissue, which resulted in a total of 15 distinct clusters when visualized on a UMAP plot"
 
+https://trace.ncbi.nlm.nih.gov/Traces/sra/?run=SRR6854062
 
-normalize and scale each data set with the SCTransform function ("performs variance stabiling transformation in which genes are grouped according to mean expression in order to smoothen model parameters for negative binomial regression"
+(click on run, and then data access)
 
-removing cell-cycle genes as a confounding source of variation: "mitochondrial percentage and cell cycle scores based on the expression of canonical G2M and S phase markers were computed for each cell (Cell cycle genes were provided through the Seurat tutorial)"
+<h3> 4.1 Importing Data into Seurat </h3>
 
-These score values were then used as input for the “vars.to.regress” argument in the SCTransfrom() function. (This operation generates a “corrected” expression matrix by building a regression model on these variables for each gene.)
+"Seurat objects and their inputs don't actually contain the nucleotide sequence information you are looking for. If you are looking for the full fasta sequence for a specific gene or transcript isoform you can find easily find those from ensembl or NCBI browsers. If you are looking for the sequences for the reads that match those transcripts in your samples then you'll need to dig into the BAM file (assuming cell ranger output). You visualize those reads and where they map using interactive tools like IGV."
 
-To identify shared and unique molecular cell-types across datasets and time-points, sample expression matrices were batch-corrected using Seurat’s Data Integration workflow (In brief, data integration uses canonical correlation analysis between two samples to identify mutual nearest neighbors.)
+BAM files not supported: https://github.com/satijalab/seurat/issues/2488
 
-These “anchors” are then used to generate a corrected gene expression matrix based on the consistency of the anchors between cells, effectively performing a batch correction.
+"This is not supported in Seurat, you will need to create a count matrix before loading data into Seurat."
+
+"how to convert my barcoded bam file to a count matrix."
+
+https://hbctraining.github.io/Intro-to-rnaseq-hpc-O2/lessons/05_counting_reads.html
 
 
+<h3> 4.2 Feature Counts </h3>
+
+"Output of counting = A count matrix, with genes as rows and samples are columns"
+
+"we will be using the featureCounts tool to get the gene counts. We picked this tool because it is accurate, fast and is relatively easy to use."
+
+"can be used to count both RNA-seq and genomic DNA-seq reads."
+
+"featureCounts is a highly efficient general-purpose read summarization program that counts mapped reads for genomic features such as genes, exons, promoter, gene bodies, genomic bins and chromosomal locations"
+
+http://bioinf.wehi.edu.au/featureCounts/
+
+<h3> 4.3 Installing Bioconductor for Feature Counts </h3>
+
+http://bioconductor.org/install/
+
+In R type:
+
+```R
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+BiocManager::install(version = "3.12")
 
 
+BiocManager::install(c("Rsubread"))
+```
 
+<h3> 4.3 Using Feature Counts </h3>
+
+Input for counting = multiple BAM files + 1 GTF file
+
+Simply speaking, the genomic coordinates of where the read is mapped (BAM) are cross-referenced with the genomic coordinates of whichever feature you are interested in counting expression of (GTF), it can be exons, genes or transcripts.
+
+(srun is used to submit a job for execution in real time)
+
+Start an interactive session with 4 cores:
+
+    $ srun --pty -p short -t 0-12:00 -c 4 --mem 8G --reservation=HBC /bin/bash
+
+<h3> 4.4 Samtools </h3>
+
+#TODO: install Samtools
+
+<h3> 4.5 Big Data Todos </h3>
+
+Research:
+
+- HPC cluster
+
+-  Google life sciences api (bioinformatics tools built with docker containers, unlimited computation)
