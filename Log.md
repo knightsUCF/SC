@@ -12,8 +12,25 @@
 
 2.2 Seurat Documentation
 
-2.3 Seurat Tutorials
+2.3 Guided Clustering Seurat Tutorial (Processing a Seurat Object)
 
+3.0 Replicating Results
+
+3.1 Steps
+
+4.0 Data
+
+4.1 Importing Data into Seurat
+
+4.2 Feature Counts
+
+4.3 Installing Bioconductor for Feature Counts
+
+4.4 Using Feature Counts
+
+4.5 Samtools
+
+4.6 Big Data
 
 <br>
 
@@ -232,7 +249,7 @@ BiocManager::install(version = "3.12")
 BiocManager::install(c("Rsubread"))
 ```
 
-<h3> 4.3 Using Feature Counts </h3>
+<h3> 4.4 Using Feature Counts </h3>
 
 Input for counting = multiple BAM files + 1 GTF file
 
@@ -243,15 +260,17 @@ Simply speaking, the genomic coordinates of where the read is mapped (BAM) are c
 Start an interactive session with 4 cores:
 
     $ srun --pty -p short -t 0-12:00 -c 4 --mem 8G --reservation=HBC /bin/bash
+    
+TODO: 8 GB Mac machine crashing, need to reformat 32 GB ram Windows machine to Linux
 
-<h3> 4.4 Samtools </h3>
+<h3> 4.5 Samtools </h3>
 
-#TODO: install Samtools
+TODO: install Samtools
 
-<h3> 4.5 Big Data Todos </h3>
+<h3> 4.6 Big Data Todos </h3>
 
 Research:
 
 - HPC cluster
 
--  Google life sciences api (bioinformatics tools built with docker containers, unlimited computation)
+- Google life sciences api (bioinformatics tools built with docker containers, unlimited computation)
