@@ -3,11 +3,17 @@
 # Contents
 
 1.0 Overview
+
 1.1 Nature Background Article Notes
+
 2.0 Seurat
+
 2.1 Installing Seurat
+
 2.2 Seurat Documentation
+
 2.3 Seurat Tutorials
+
 
 <br>
 
