@@ -4,7 +4,9 @@
 
 <h4> 1.0 Overview </h4>
 
-1.1 Nature Background Article Notes
+1.0 Goal
+
+1.1 Background Article Notes
 
 <h4> 2.0 Seurat </h4>
 
@@ -36,6 +38,8 @@
 
 # 1.0 Overview
 
+<h1> Goal </h1>
+
 Goal: replicate results of "Single cell analysis of the cellular heterogeneity and interactions in the injured mouse spinal cord"
 
 https://www.biorxiv.org/content/10.1101/2020.05.13.094854v1
@@ -45,7 +49,7 @@ Background article:
 https://www.nature.com/articles/s12276-018-0071-8
 
 
-<h3> 1.1 Nature Background Article Notes </h3>
+<h3> 1.1 Background Article Notes </h3>
 
 * "In this review, we will focus on technical challenges in single-cell isolation and library preparation and on computational analysis pipelines available for analyzing scRNA-seq data."
 
