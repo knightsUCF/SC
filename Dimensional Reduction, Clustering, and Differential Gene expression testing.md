@@ -65,8 +65,29 @@ DimPlot(pbmc, reduction = "umap")
 
 https://satijalab.org/seurat/v3.0/interaction_vignette.html
 
+---
 
 5) In order to cluster the cells based on similarity of expression, we ran the FindClusters() function on the shared-nearest-neighbor graph with default parameters.
+
+---
+
+Cluster Determination
+
+Identify clusters of cells by a shared nearest neighbor (SNN) modularity optimization based clustering algorithm. First calculate k-nearest neighbors and construct the SNN graph. Then optimize the modularity function to determine clusters. For a full description of the algorithms, see Waltman and van Eck (2013) The European Physical Journal B.
+
+
+```R
+FindClusters(object, genes.use = NULL, pc.use = NULL, k.param = 30,
+  k.scale = 25, plot.SNN = FALSE, prune.SNN = 1/15, save.SNN = FALSE,
+  reuse.SNN = FALSE, do.sparse = FALSE, modularity.fxn = 1,
+  resolution = 0.8, algorithm = 1, n.start = 100, n.iter = 10,
+  random.seed = 0, print.output = TRUE)
+```
+
+https://www.rdocumentation.org/packages/Seurat/versions/1.4.0/topics/FindClusters
+
+https://www.rdocumentation.org/packages/Seurat/versions/1.4.0/topics/FindClusters
+
 
 6) For the myeloid, vascular, and macroglial cells, we performed similar analyses as described above, with a few modifications. In order to identify reproducible sub-clusters of cells, we performed the same graph-based clustering through a range of PCs, “k.neighbor” and “resolution” parameters and inspected cluster memberships for stable configurations. For the myeloid, vascular, and macroglia, we took the top 12, 11, and 8 PCs and set resolutions to 0.5, 0.3, and 0.45 respectively.
 
