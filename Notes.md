@@ -43,4 +43,4 @@ One way to investigate cellular responses to injury is through transcriptomic pr
 9) Taken together, our analysis of DEGs between major cell types uncovers highly specific molecular identifiers, many of which are non-canonical and display temporal specificity.
 
 
-# Summary Outline for "Myeloid analysis reveals temporal changes in macrophage and microglial subtypes"
+<h3> Summary Outline for "Myeloid analysis reveals temporal changes in macrophage and microglial subtypes" </h3>
