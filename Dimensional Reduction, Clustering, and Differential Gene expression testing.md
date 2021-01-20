@@ -27,7 +27,7 @@ https://satijalab.org/seurat/v3.0/dim_reduction_vignette.html
 ---
 
 
-2) The top 15 principal components (PCs) were selected based on the “elbow” point heuristic in a scree plot which quantifies the contribution of variance by each principal component.
+<h3> 2) The top 15 principal components (PCs) were selected based on the “elbow” point heuristic in a scree plot which quantifies the contribution of variance by each principal component. </h3>
 
 
 ---
@@ -43,7 +43,7 @@ https://gtpb.github.io/ADER18S/pages/tutorial-seurat-mca
 
 --- 
 
-3) Using these components, a nearest-neighbor graph and shared-nearest-neighbor graph were generated with “k.neighbors” set to 20 by default.
+<h3> 3) Using these components, a nearest-neighbor graph and shared-nearest-neighbor graph were generated with “k.neighbors” set to 20 by default. </h3>
 
 ---
 
@@ -54,7 +54,7 @@ https://rdrr.io/github/satijalab/seurat/man/FindNeighbors.html
 
 ---
 
-4) To visualize the cells, we generate a UMAP plot with default Seurat parameters using cell coordinates in PCA-space using the top 15 PCs.
+<h3> 4) To visualize the cells, we generate a UMAP plot with default Seurat parameters using cell coordinates in PCA-space using the top 15 PCs. </h3>
 
 ---
 
@@ -67,7 +67,7 @@ https://satijalab.org/seurat/v3.0/interaction_vignette.html
 
 ---
 
-5) In order to cluster the cells based on similarity of expression, we ran the FindClusters() function on the shared-nearest-neighbor graph with default parameters.
+<h3> 5) In order to cluster the cells based on similarity of expression, we ran the FindClusters() function on the shared-nearest-neighbor graph with default parameters. </h3>
 
 ---
 
@@ -88,7 +88,7 @@ https://www.rdocumentation.org/packages/Seurat/versions/1.4.0/topics/FindCluster
 
 ---
 
-6) For the myeloid, vascular, and macroglial cells, we performed similar analyses as described above, with a few modifications. In order to identify reproducible sub-clusters of cells, we performed the same graph-based clustering through a range of PCs, “k.neighbor” and “resolution” parameters and inspected cluster memberships for stable configurations. For the myeloid, vascular, and macroglia, we took the top 12, 11, and 8 PCs and set resolutions to 0.5, 0.3, and 0.45 respectively.
+<h3> 6) For the myeloid, vascular, and macroglial cells, we performed similar analyses as described above, with a few modifications. In order to identify reproducible sub-clusters of cells, we performed the same graph-based clustering through a range of PCs, “k.neighbor” and “resolution” parameters and inspected cluster memberships for stable configurations. For the myeloid, vascular, and macroglia, we took the top 12, 11, and 8 PCs and set resolutions to 0.5, 0.3, and 0.45 respectively.</h3>
 
 ---
 
@@ -98,7 +98,7 @@ from example above:
 
 ---
 
-7) To identify marker genes for each cluster, we used the FindAllMarkers() function using default parameters, which implements a Wilcoxon Rank Sum test comparing gene expression of cells within a given cluster versus all other cells.
+<h3> 7) To identify marker genes for each cluster, we used the FindAllMarkers() function using default parameters, which implements a Wilcoxon Rank Sum test comparing gene expression of cells within a given cluster versus all other cells.</h3>
 
 ---
 
@@ -132,7 +132,7 @@ https://www.rdocumentation.org/packages/Seurat/versions/3.1.4/topics/FindAllMark
 
 ---
 
-8) We repeated this analysis to identify marker genes distinguishing subsets within a cell-type.
+<h3> 8) We repeated this analysis to identify marker genes distinguishing subsets within a cell-type.</h3>
 
 ---
 
@@ -143,7 +143,7 @@ min.cells.group = 3,
 
 ---
 
-9) To infer the functional relevance of sub-clusters, we performed gene ontology enrichment analyses on the top 50 differentially expressed genes using Fisher’s Exact test as implemented in the topGO R package. For the enrichment analyses of the gene expression changes in astrocytes, our initial analysis revealed very few differentially expressed genes between the uninjured and 1dpi astrocytes, which we attributed to the low numbers of uninjured astrocytes captured. Therefore, we supplemented our uninjured astrocyte dataset with ACNT1 and ACNT2 astrocyte data from the previously published mouse CNS single-cell atlas dataset. We also supplemented our uninjured OPC dataset in order to validate that our uninjured cells were more transcriptional similar to the external reference cells than to our injured cells.
+<h3> 9) To infer the functional relevance of sub-clusters, we performed gene ontology enrichment analyses on the top 50 differentially expressed genes using Fisher’s Exact test as implemented in the topGO R package. For the enrichment analyses of the gene expression changes in astrocytes, our initial analysis revealed very few differentially expressed genes between the uninjured and 1dpi astrocytes, which we attributed to the low numbers of uninjured astrocytes captured. Therefore, we supplemented our uninjured astrocyte dataset with ACNT1 and ACNT2 astrocyte data from the previously published mouse CNS single-cell atlas dataset. We also supplemented our uninjured OPC dataset in order to validate that our uninjured cells were more transcriptional similar to the external reference cells than to our injured cells.</h3>
 
 ---
 
@@ -176,7 +176,7 @@ names(geneList) <- all.genes
 
 ---
 
-10) To account for differences in sequencing depth between our dataset and the external dataset, we performed differential expression tests using MAST as implemented in Seurat. We used all differentially expressed genes (p_val_adj < 0.001) as input for gene ontology analysis.
+<h3> 10) To account for differences in sequencing depth between our dataset and the external dataset, we performed differential expression tests using MAST as implemented in Seurat. We used all differentially expressed genes (p_val_adj < 0.001) as input for gene ontology analysis. </h3>
 
 ---
 
