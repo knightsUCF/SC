@@ -154,7 +154,7 @@ One way to investigate cellular responses to injury is through transcriptomic pr
 
 1) We found that myeloid subtypes display distinct temporal regulation of angiogenesis, gliosis, and fibrosis. These results support previous studies showing that myeloid depletion leads to reduced angiogenesis, astrogliosis, and fibrosis after CNS injury3, 27, 28, and provide further insight by identifying potential contributions of specific myeloid subtypes.
 
-<h4> 2) Our finding that Macrophage-A and B subtypes do not correspond to the M1/M2 nomenclature (Extended Data Fig. 5) is consistent with findings from other sc-RNAseq studies29–31. </h4>
+2) Our finding that Macrophage-A and B subtypes do not correspond to the M1/M2 nomenclature (Extended Data Fig. 5) is consistent with findings from other sc-RNAseq studies
 
 3) The vascular analysis revealed novel insight in the contribution of tip cells and astrocytes during angiogenesis after SCI. The data indicate that tip cells are highly dynamic; they appear quickly at 1dpi and are mostly gone by 7pi.
 
