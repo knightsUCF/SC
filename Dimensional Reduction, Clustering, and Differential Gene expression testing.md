@@ -96,8 +96,12 @@ from example above:
 
 ```resolution = 0.8, algorithm = 1, n.start = 100, n.iter = 10,```
 
+---
 
 7) To identify marker genes for each cluster, we used the FindAllMarkers() function using default parameters, which implements a Wilcoxon Rank Sum test comparing gene expression of cells within a given cluster versus all other cells.
+
+---
+
 
 ```R
 FindAllMarkers(
