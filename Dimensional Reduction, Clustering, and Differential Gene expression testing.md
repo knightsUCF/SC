@@ -32,7 +32,7 @@ https://satijalab.org/seurat/v3.0/dim_reduction_vignette.html
 
 ---
 
-he first thing to look at is the PCA scree-plot, showing the proportion of variance explained by each component. We are looking for a “knee” in the plot, where additional PCs do not bring much more new information.
+The first thing to look at is the PCA scree-plot, showing the proportion of variance explained by each component. We are looking for a “knee” in the plot, where additional PCs do not bring much more new information.
 
 For this purpose, Seurat provides the function PCElbowPlot, that displays the standard-deviation of each PC.
 
