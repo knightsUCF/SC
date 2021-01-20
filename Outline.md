@@ -1,12 +1,8 @@
 # Outline of Steps
 
-Plan: go through research paper and outline steps
+Numbered outline of research steps.
 
 https://www.biorxiv.org/content/10.1101/2020.05.13.094854v1.full
-
-
-Abstract (might be later in the process)
-
 
 
 
