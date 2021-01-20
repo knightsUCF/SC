@@ -161,6 +161,31 @@ One way to investigate cellular responses to injury is through transcriptomic pr
 4) Our single cell RNA-seq dataset is the first comprehensive transcriptomic analysis that captures virtually all cells that contribute to the injury site pathology after SCI. This dataset can be used to assess not only heterogeneity of the cells that comprise the injury site, but also to assess signaling mechanisms that underlie cellular interactions at the injury site.
 
 
+# Methods Section
+
+<h3> Mice & Spinal Cord Injuries </h3
+  
+Wet lab, TODO: review
+
+<h3> Tissue Dissociation </h3>
+
+Wet lab, TODO: review
+
+<h3> Histology </h3>
+
+Wet lab, TODO: review
+
+<h3> Immunohistochemistry </h3> 
+
+Wet lab, TODO: review
+
+<h3> In situ hybridization </h3>
+
+Wet lab, TODO: review
+
+
+
+
 
 
 
