@@ -130,8 +130,11 @@ FindAllMarkers(
 
 https://www.rdocumentation.org/packages/Seurat/versions/3.1.4/topics/FindAllMarkers
 
+---
 
 8) We repeated this analysis to identify marker genes distinguishing subsets within a cell-type.
+
+---
 
 ```R
 min.cells.feature = 3,
