@@ -70,3 +70,11 @@ One way to investigate cellular responses to injury is through transcriptomic pr
 12) Both subtypes expressed the lysosomal gene cd63, but were distinguished by preferential expression of heme oxygenase hmox in Macrophage-A and apoe in Macrophage-B. 
 
 13) In conclusion, our data reveals the presence of multiple cellular states in the monocyte-macrophage lineage that display temporal progression toward a more pro-inflammatory state.
+
+14) To validate the presence of Macrophage-A and Macrophage-B subtypes in vivo, we first isolated macrophages based on CD63hi expression (gating strategy in Extended Data Fig. 6). 
+
+15) Further separation on ApoE and CD11b expression revealed two distinct clusters that were consistent with Macrophage-A (CD63hi/ApoElo/CD11bmed) and Macrophage-B (CD63hi/ApoEhi/CD11bhi)subtypes (Fig. 3d, e).
+
+16) Consistent with our sequencing data, the monocytes were the predominant myeloid populations at 1 dpi, and subsequently decreased at 7dpi, whereas Macrophage-A (ApoElo) and Macrophage-B (ApoEhi) were the most represented macrophage subtypes at 1 and 7dpi, respectively (Fig. 3e).
+
+<h3> Summary Outline for Vascular heterogeneity analysis identifies tip cell dynamics </h3>
