@@ -4,9 +4,14 @@
 
 1) In order to measure the greatest gene expression variation among all the SCI cells, we first performed PCA on the batch-corrected expression matrix for the top 2000 variable genes taken from above.
 
+---
+
 https://satijalab.org/seurat/v3.0/dim_reduction_vignette.html
 
 is this pre or post PCA?
+
+---
+
 
 2) The top 15 principal components (PCs) were selected based on the “elbow” point heuristic in a scree plot which quantifies the contribution of variance by each principal component.
 
