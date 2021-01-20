@@ -39,7 +39,7 @@ One way to investigate cellular responses to injury is through transcriptomic pr
 9) Taken together, our analysis of DEGs between major cell types uncovers highly specific molecular identifiers, many of which are non-canonical and display temporal specificity.
 
 
-<h3> Summary for "Myeloid analysis reveals temporal changes in macrophage and microglial subtypes" </h3>
+<h3> Summary of "Myeloid analysis reveals temporal changes in macrophage and microglial subtypes" </h3>
 
 1) To determine the heterogeneity within the myeloid population, clustering analysis was performed on myeloid cells and visualized on a separate UMAP (Fig. 2a, b), which revealed two large clusters corresponding to microglia and peripherally-derived myeloid cells as identified by annotated markers (Extended Data Fig. 3). 
 
@@ -73,7 +73,7 @@ One way to investigate cellular responses to injury is through transcriptomic pr
 
 16) Consistent with our sequencing data, the monocytes were the predominant myeloid populations at 1 dpi, and subsequently decreased at 7dpi, whereas Macrophage-A (ApoElo) and Macrophage-B (ApoEhi) were the most represented macrophage subtypes at 1 and 7dpi, respectively (Fig. 3e).
 
-<h3> Summary for Vascular heterogeneity analysis identifies tip cell dynamics </h3>
+<h3> Summary of Vascular heterogeneity analysis identifies tip cell dynamics </h3>
 
 1. To determine the heterogeneity of vascular cells, clustering analysis was performed only on the vascular clusters (endothelial cells, fibroblasts, and pericytes from Fig. 1) and visualized on a separate UMAP, which revealed endothelial cell subtypes on one side and perivascular mural cells on the other. 
 
@@ -95,7 +95,7 @@ One way to investigate cellular responses to injury is through transcriptomic pr
 
 10. Taken together, our analysis identified all known major vascular cell types at the injury site, including previously undescribed tip cell molecular and temporal profiles.
 
-<h3> Summary for Cellular interactions via angiopoietin and VEGF signaling during angiogenesis </h3>
+<h3> Summary of Cellular interactions via angiopoietin and VEGF signaling during angiogenesis </h3>
 
 1) To gain insight into mechanisms of cellular interactions during angiogenesis after SCI, we adapted CellPhoneDB15 to calculate “interaction scores” based on the average expression levels of a ligand and its receptor between two cells (Fig. 5a). We focused on angiopoietin (Angpt) and vascular endothelial growth factor (Vegf) signaling due to their well-known roles in angiogenesis. The highest interaction score was detected between tip cells and endothelial cells along the Angpt2-Tie2 pathway at 1dpi (Fig. 5b). Expression analysis showed that Angpt2 is expressed most highly by tip cells at 1dpi followed by a gradual decrease over the next 7 days, and Tie2 (and Tie1) is expressed in endothelial cells at all time points (Fig. 5c). Interestingly, Angpt1 signaling to endothelial/tip cells shifted from VSMC at 1dpi to astrocytes at 3 and 7dpi (Fig. 5b).
 
