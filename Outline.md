@@ -99,4 +99,14 @@ One way to investigate cellular responses to injury is through transcriptomic pr
 
 10. Taken together, our analysis identified all known major vascular cell types at the injury site, including previously undescribed tip cell molecular and temporal profiles.
 
+<h3> Summary for Cellular interactions via angiopoietin and VEGF signaling during angiogenesis </h3>
 
+1) To gain insight into mechanisms of cellular interactions during angiogenesis after SCI, we adapted CellPhoneDB15 to calculate “interaction scores” based on the average expression levels of a ligand and its receptor between two cells (Fig. 5a). We focused on angiopoietin (Angpt) and vascular endothelial growth factor (Vegf) signaling due to their well-known roles in angiogenesis. The highest interaction score was detected between tip cells and endothelial cells along the Angpt2-Tie2 pathway at 1dpi (Fig. 5b). Expression analysis showed that Angpt2 is expressed most highly by tip cells at 1dpi followed by a gradual decrease over the next 7 days, and Tie2 (and Tie1) is expressed in endothelial cells at all time points (Fig. 5c). Interestingly, Angpt1 signaling to endothelial/tip cells shifted from VSMC at 1dpi to astrocytes at 3 and 7dpi (Fig. 5b).
+
+2) Vegfa binding to Vegfr1 and Vegfr2 on endothelial cells facilitates the proliferation, survival and directional sprouting of tip cell filipodia during angiogenesis17–19. The highest interaction scores for these ligand-receptor pairs were associated with monocytes/macrophages and astrocytes (Fig. 5d). 
+
+3) Vegfa expression was highest in these two cell types at 1dpi, and Vegfr1 and Vegfr2 receptors were highly expressed by endothelial cells at all time points, suggesting that the major cues for new vessel formation is derived from the infiltrating myeloid cells and astrocytes (Fig. 5e). 
+
+4) Strikingly, the strongest interactions amongst the Vegf family members were associated with placental growth factor (Plgf) binding to Vegfr1 (Fig. 5d).
+
+<h3> Summary for Analysis of macroglia heterogeneity reveals astrocyte and OPC-specific roles during gliosis </h3>
