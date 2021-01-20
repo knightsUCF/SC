@@ -172,6 +172,11 @@ names(geneList) <- all.genes
         geneSelectionFun = function(x)(x == 1),
               annot = annFUN.org, mapping = "org.Mm.eg.db", ID = "symbol")
 ```
+
+https://ucdavis-bioinformatics-training.github.io/2017_2018-single-cell-RNA-sequencing-Workshop-UCD_UCB_UCSF/day3/scRNA_Workshop-PART6.html
+
+http://geneontology.org/docs/go-enrichment-analysis/
+
  
 
 ---
