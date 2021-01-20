@@ -86,14 +86,96 @@ FindClusters(object, genes.use = NULL, pc.use = NULL, k.param = 30,
 
 https://www.rdocumentation.org/packages/Seurat/versions/1.4.0/topics/FindClusters
 
-
+---
 
 6) For the myeloid, vascular, and macroglial cells, we performed similar analyses as described above, with a few modifications. In order to identify reproducible sub-clusters of cells, we performed the same graph-based clustering through a range of PCs, “k.neighbor” and “resolution” parameters and inspected cluster memberships for stable configurations. For the myeloid, vascular, and macroglia, we took the top 12, 11, and 8 PCs and set resolutions to 0.5, 0.3, and 0.45 respectively.
 
+---
+
+from example above:
+
+```resolution = 0.8, algorithm = 1, n.start = 100, n.iter = 10,```
+
+
 7) To identify marker genes for each cluster, we used the FindAllMarkers() function using default parameters, which implements a Wilcoxon Rank Sum test comparing gene expression of cells within a given cluster versus all other cells.
+
+```R
+FindAllMarkers(
+  object,
+  assay = NULL,
+  features = NULL,
+  logfc.threshold = 0.25,
+  test.use = "wilcox",
+  slot = "data",
+  min.pct = 0.1,
+  min.diff.pct = -Inf,
+  node = NULL,
+  verbose = TRUE,
+  only.pos = FALSE,
+  max.cells.per.ident = Inf,
+  random.seed = 1,
+  latent.vars = NULL,
+  min.cells.feature = 3,
+  min.cells.group = 3,
+  pseudocount.use = 1,
+  return.thresh = 0.01,
+  ...
+)
+```
+
+
+https://www.rdocumentation.org/packages/Seurat/versions/3.1.4/topics/FindAllMarkers
+
 
 8) We repeated this analysis to identify marker genes distinguishing subsets within a cell-type.
 
-9) To infer the functional relevance of sub-clusters, we performed gene ontology enrichment analyses on the top 50 differentially expressed genes using Fisher’s Exact test as implemented in the topGO R package. For the enrichment analyses of the gene expression changes in astrocytes, our initial analysis revealed very few differentially expressed genes between the uninjured and 1dpi astrocytes, which we attributed to the low numbers of uninjured astrocytes captured. Therefore, we supplemented our uninjured astrocyte dataset with ACNT1 and ACNT2 astrocyte data from the previously published mouse CNS single-cell atlas dataset50. We also supplemented our uninjured OPC dataset in order to validate that our uninjured cells were more transcriptional similar to the external reference cells than to our injured cells.
+```R
+min.cells.feature = 3,
+min.cells.group = 3,
+```
+
+---
+
+9) To infer the functional relevance of sub-clusters, we performed gene ontology enrichment analyses on the top 50 differentially expressed genes using Fisher’s Exact test as implemented in the topGO R package. For the enrichment analyses of the gene expression changes in astrocytes, our initial analysis revealed very few differentially expressed genes between the uninjured and 1dpi astrocytes, which we attributed to the low numbers of uninjured astrocytes captured. Therefore, we supplemented our uninjured astrocyte dataset with ACNT1 and ACNT2 astrocyte data from the previously published mouse CNS single-cell atlas dataset. We also supplemented our uninjured OPC dataset in order to validate that our uninjured cells were more transcriptional similar to the external reference cells than to our injured cells.
+
+---
+
+ "Gene Ontology (GO) Enrichment of Genes Expressed in a Cluster"
+ 
+ (Bioconductor package)
+ 
+ ```R
+ # install org.Mm.eg.db if not already installed (for mouse only)
+# install.packages("org.Mm.eg.db") 
+cluster0 <- SubsetData(experiment.aggregate, ident.use = 0)
+expr <- cluster0@data
+# Select genes that are expressed > 0 in at least 75% of cells (somewhat arbitrary definition)
+n.gt.0 <- apply(expr, 1, function(x)length(which(x > 0)))
+expressed.genes <- rownames(expr)[which(n.gt.0/ncol(expr) >= 0.75)]
+all.genes <- rownames(expr)
+
+# define geneList as 1 if gene is in expressed.genes, 0 otherwise
+geneList <- ifelse(all.genes %in% expressed.genes, 1, 0)
+names(geneList) <- all.genes
+
+# Create topGOdata object
+    GOdata <- new("topGOdata",
+        ontology = "BP", # use biological process ontology
+        allGenes = geneList,
+        geneSelectionFun = function(x)(x == 1),
+              annot = annFUN.org, mapping = "org.Mm.eg.db", ID = "symbol")
+```
+ 
+
+---
 
 10) To account for differences in sequencing depth between our dataset and the external dataset, we performed differential expression tests using MAST as implemented in Seurat. We used all differentially expressed genes (p_val_adj < 0.001) as input for gene ontology analysis.
+
+```
+# Test for DE features using the MAST package
+head(FindMarkers(pbmc, ident.1 = "CD14+ Mono", ident.2 = "FCGR3A+ Mono", test.use = "MAST"))
+```
+
+https://satijalab.org/seurat/v3.0/de_vignette.html
+
+---
