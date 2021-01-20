@@ -178,6 +178,8 @@ names(geneList) <- all.genes
 
 10) To account for differences in sequencing depth between our dataset and the external dataset, we performed differential expression tests using MAST as implemented in Seurat. We used all differentially expressed genes (p_val_adj < 0.001) as input for gene ontology analysis.
 
+---
+
 ```
 # Test for DE features using the MAST package
 head(FindMarkers(pbmc, ident.1 = "CD14+ Mono", ident.2 = "FCGR3A+ Mono", test.use = "MAST"))
@@ -185,4 +187,4 @@ head(FindMarkers(pbmc, ident.1 = "CD14+ Mono", ident.2 = "FCGR3A+ Mono", test.us
 
 https://satijalab.org/seurat/v3.0/de_vignette.html
 
----
+
