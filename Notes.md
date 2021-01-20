@@ -44,3 +44,29 @@ One way to investigate cellular responses to injury is through transcriptomic pr
 
 
 <h3> Summary Outline for "Myeloid analysis reveals temporal changes in macrophage and microglial subtypes" </h3>
+
+1) To determine the heterogeneity within the myeloid population, clustering analysis was performed on myeloid cells and visualized on a separate UMAP (Fig. 2a, b), which revealed two large clusters corresponding to microglia and peripherally-derived myeloid cells as identified by annotated markers (Extended Data Fig. 3). 
+
+2) We identified 6 microglial subtypes.
+
+3) Homeostatic microglia were identified based on its expression of several annotated markers of steady-state microglia, such as p2ry12, siglech, and tmem119 (Fig. 2).
+
+4) We identified four DAM subtypes, which were labeled DAM-A to D. DAM-A was identified by high expression of the low density lipoprotein receptor msr1 and low expression of the purinergic receptor p2ry12, and comprised 100% of microglia present at 1dpi. DAM-B and C expressed moderate level of p2ry12 and low level of msr1, and their expression profile was similar to homeostatic microglia, suggesting an intermediate state as some DAM-A revert back to a more homeostatic state. DAM-D had low levels of both msr1 and p2ry12, and was best identified by high expression of the growth factor igf1 and the cholesterol-binding protein apoe. 
+
+5) The last microglia subtype was identified as dividing microglia due to their high expression of cell cycle-related genes (mki67 and top2a). Dividing microglia shared several DEGs with DAM-D such as igf1, spp1, and fabp5 (Fig. 2e), and the fact that expansion of DAM-D from 3 to 7 dpi coincides with reduction in dividing microglia (Fig. 2c) suggests that dividing microglia may give rise to DAM-D after injury. A putative model depicting the relationship between DAM subtypes is illustrated in Extended Data Fig. 4a.
+
+6) We used flow cytometry to validate the presence of DAMs in vivo (gating strategy in Extended Data Fig 5). 
+
+7) Microglia were gated on P2ry12 and Msr1 expression based on our sequencing data (Fig. 2d). As expected, over 90% of microglia present in the uninjured spinal cord were in the homeostatic state (P2ry12hi/Msr1lo), and this decreased to 20% at 1dpi (Fig. 2f, g).
+
+8) At 1dpi, there was a large increase in Msr1hi microglia, consistent with the appearance of DAM-A. However, the majority of Msr1hi microglia were also P2ry12hi, representing a transition state between homeostatic and DAM-A, which are expected to be P2ry12lo/Msr1hi based on our sequencing results. 
+
+9)  At 7dpi, we observed a significant decrease in Msr1hi microglia and a partial return of homeostatic microglia, which this was not observed in our sequencing data.
+
+10) Taken together, our flow cytometry data support the appearance of DAM-A microglia subtype after SCI in vivo, but the temporal effects are more graded than those predicted from our sequencing data perhaps due to a delay in manifestation of gene expression changes at the protein level.
+
+11) The peripherally-derived myeloid cluster revealed two monocyte and two macrophage subtypes in addition to border-associated macrophages and dendritic cells. The two monocyte subtypes corresponded to the classical Ly6Chi and the non-classical Ly6Clo monocytes (Fig. 3c) with the latter representing the largest population at 1dpi. 3 and 7dpi were dominated by the two macrophage subtypes, Macrophage-A and Macrophage-B respectively. 
+
+12) Both subtypes expressed the lysosomal gene cd63, but were distinguished by preferential expression of heme oxygenase hmox in Macrophage-A and apoe in Macrophage-B. 
+
+13) In conclusion, our data reveals the presence of multiple cellular states in the monocyte-macrophage lineage that display temporal progression toward a more pro-inflammatory state.
