@@ -10,6 +10,14 @@
 
 <h3>  How to store and interact with dimensional reduction information (such as the output from RunPCA)  </h3>
 
+"We next use the count matrix to create a Seurat object. The object serves as a container that contains both data (like the count matrix) and analysis (like PCA, or clustering results)"
+
+"By default, we return 2,000 features per dataset. These will be used in downstream analysis, like PCA."
+
+"Next, we apply a linear transformation ('scaling') that is a standard pre-processing step prior to dimensional reduction techniques like PCA." (this step already done?)
+
+https://satijalab.org/seurat/v3.2/pbmc3k_tutorial.html
+
 https://satijalab.org/seurat/v3.0/dim_reduction_vignette.html
 
 
