@@ -10,6 +10,8 @@ https://satijalab.org/seurat/v3.0/dim_reduction_vignette.html
 
 is this pre or post PCA?
 
+<h3>  How to store and interact with dimensional reduction information (such as the output from RunPCA)  </h3>
+
 ---
 
 
