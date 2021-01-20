@@ -78,3 +78,25 @@ One way to investigate cellular responses to injury is through transcriptomic pr
 16) Consistent with our sequencing data, the monocytes were the predominant myeloid populations at 1 dpi, and subsequently decreased at 7dpi, whereas Macrophage-A (ApoElo) and Macrophage-B (ApoEhi) were the most represented macrophage subtypes at 1 and 7dpi, respectively (Fig. 3e).
 
 <h3> Summary for Vascular heterogeneity analysis identifies tip cell dynamics </h3>
+
+1. To determine the heterogeneity of vascular cells, clustering analysis was performed only on the vascular clusters (endothelial cells, fibroblasts, and pericytes from Fig. 1) and visualized on a separate UMAP, which revealed endothelial cell subtypes on one side and perivascular mural cells on the other. 
+
+2. We identified each cluster using annotated markers from a previous sc-RNAseq study of the brain vasculature13.
+
+3. We identified fibroblasts, pericytes, and vascular smooth muscle cells (VSMC) as three distinct populations of perivascular mural cells that were identified based on their expression of col1a1, kcnj8, and acta2 respectively (Extended Data Fig. 7b). 
+
+4. We also identified an unknown vascular subtype (U-Vascular) that clustered with mural cells due to its molecular similarity with pericytes, but also expressed endothelial cell markers (Extended Data Fig. 7c).
+
+5. Next, we identified an arterial, a venous, and two capillary subtypes based on annotated markers13. Arterial endothelial cells were identified by expression of gkn3 and stmn2, whereas venous endothelial cells were identified by slc38a5 and icam1. Capillary endothelial cells were identified by the expression of general endothelial cell markers ly6a and cldn5, combined with the lack of selective arterial and venous markers (Fig. 4d, Extended Data Fig. 7c). The fifth endothelial cluster was identified as tip cells based on their expression of the canonical marker apln.
+
+6. Whereas the other endothelial subtypes did not show large temporal changes in proportion, the proportion of tip cells increased significantly at 1dpi, and decreased to basal levels by 7dpi (Fig. 4c).
+
+7. This tip cell temporal profile was validated using in situ hybridization for apln combined with immunostaining for podocalyxin as an endothelial cell marker (Fig 4f).
+
+8. In the uninjured cord, apln transcripts were detected scattered throughout the gray matter, consistent with previous reports of apln expression in neurons14. 
+
+9. However, we did not detect any endothelial cells expressing apln in uninjured tissue sections, suggesting that tip cells detected in uninjured tissue in our sc-RNAseq data was most likely due to tissue processing. 
+
+10. Taken together, our analysis identified all known major vascular cell types at the injury site, including previously undescribed tip cell molecular and temporal profiles.
+
+
