@@ -45,7 +45,26 @@ https://gtpb.github.io/ADER18S/pages/tutorial-seurat-mca
 
 3) Using these components, a nearest-neighbor graph and shared-nearest-neighbor graph were generated with “k.neighbors” set to 20 by default.
 
+---
+
+Constructs a Shared Nearest Neighbor (SNN) Graph for a given dataset. We first determine the k-nearest neighbors of each cell. We use this knn graph to construct the SNN graph by calculating the neighborhood overlap (Jaccard index) between every cell and its k.param nearest neighbors.
+
+https://rdrr.io/github/satijalab/seurat/man/FindNeighbors.html
+
+
+---
+
 4) To visualize the cells, we generate a UMAP plot with default Seurat parameters using cell coordinates in PCA-space using the top 15 PCs.
+
+---
+
+```R
+# Plot UMAP, coloring cells by cell type (currently stored in object@ident)
+DimPlot(pbmc, reduction = "umap")
+```
+
+https://satijalab.org/seurat/v3.0/interaction_vignette.html
+
 
 5) In order to cluster the cells based on similarity of expression, we ran the FindClusters() function on the shared-nearest-neighbor graph with default parameters.
 
