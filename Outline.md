@@ -1,4 +1,4 @@
-# Outline of Steps
+# Outline
 
 Numbered outline of research steps.
 
