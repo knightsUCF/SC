@@ -106,3 +106,46 @@ One way to investigate cellular responses to injury is through transcriptomic pr
 4) Strikingly, the strongest interactions amongst the Vegf family members were associated with placental growth factor (Plgf) binding to Vegfr1 (Fig. 5d).
 
 <h3> Analysis of macroglia heterogeneity reveals astrocyte and OPC-specific roles during gliosis </h3>
+
+1) To assess macroglia heterogeneity, oligodendrocyte lineage cells, astrocytes, and ependymal cells were clustered and visualized on a separate UMAP (Fig. 6a, b), which showed spatial segregation corresponding to their major cell type.
+
+2) We identified three ependymal and an astroependymal subtypes with distinct expression and temporal profiles (Fig. 6c, e, Extended Data Fig 8). 
+
+3) The astropendymal cells were best identified by their expression of the crystallin crym, and shared common markers with both astrocytes (e.g. timp1, gfap) and ependymal cells (e.g. vim, tmsb10).
+
+4) The oligodendrocyte lineage cells segregated into previously described clusters that showed a spatial progression from OPC to dividing OPC and preoligodendrocytes, and finally to oligodendrocytes (Fig. 6a).
+
+5) These populations were identified by prototypical markers, with the exception of OPCs, which were best identified by tenascin tnr (Fig. 6e, Extended Data Fig. 8b). 
+
+6) Whereas mature oligodendrocytes were predominant in the uninjured spinal cord, the proportion of OPCs, dividing OPCs, and preoligodendrocytes gradually increased over the next 7dpi. 
+
+7) To compare reactive OPCs and astrocytes, we performed Gene Ontology (GO) Enrichment Analysis for biological processes associated with DEGs between each time point (Fig. 6f).
+
+8) At 1dpi, top biological processes for both astrocytes and OPCs pertain to translation and biogenesis. By 3dpi, astrocytes are defined by processes related to neurogenesis and gliogenesis, whereas OPCs are defined by mitosis, which reflect the active state of proliferation and differentiation for both cell types during this time.
+
+9) To assess the potential effects of reactive astrocytes and OPCs on axonal growth, we compared the expression levels of axon growth inhibitory molecules using a previously curated list24 (Fig. 6g).
+
+10) Interestingly, inhibitory proteoglycans such as acan, bcan, ncan, and vcan were expressed preferentially by OPCs.
+
+<h3> Macrophage-Mediated Mechanisms of Gliosis and Fibrosis </h3>
+
+1) Since IL6 cytokine family members are the main STAT3 activators, we assessed their expression across all cell types and found oncostatin M (osm) expressed at highest levels in myeloid cells, il6 expressed at highest levels in fibroblasts, and clcf1 expressed at highest levels in astroependymal cells (Fig. 7a).
+
+2) Other IL6 cytokines were either not expressed highly or dropped out of our sequencing analysis.
+
+3) Oncostatin M receptor (osmr) and the signaling coreceptor gp130 (il6st) were expressed highly in fibroblasts and astrocytes, and interaction scores for IL-6 cytokine family members were highest for OSM signaling between Ly6Clo monocytes/Macrophage-B and astrocytes/fibroblasts (Fig. 7b).
+
+4)  To validate the sequencing data, we performed double in situ hybridization for osm and cd11b and found a significant increase in osm mRNA in cd11b+ myeloid cells compared to non-myeloid cells (Fig. 7c, e).
+
+5) To assess OSMR expression, we used immunohistochemistry and found increasing expression of OSMR in both Pdgfr-β+ fibroblasts and GFAP+ astrocytes in the fibrotic and glial scar, respectively (Fig. 7d, f, g).
+
+6)  Taken together, our results strongly suggest that the gp130 signaling pathway induced by Osm is a common mechanism by which astrocytes and fibroblasts are preferentially activated by specific monocyte/macrophage subtypes after SCI.
+
+7) To identify other distinct and common pathways by which macrophage subtypes mediate astrogliosis and fibrosis, we calculated interaction scores for all known ligand-receptor pairs between Macrophage-A/B and astrocytes/fibroblasts at 3 and 7dpi (Fig. 8).
+
+8) While many ligands expressed by macrophages signaled to receptors on both astrocytes and fibroblasts (i.e. common pathways), there were many more ligand-receptor pairs unique to macrophage-fibroblast interactions than macrophage-astrocyte interactions (i.e. distinct pathways). These unique macrophage-fibroblast interactions included signaling related to IL1α/β, Vegfa/b, Pdgfα, and Tgfβ1.
+
+9)  Overall, the highest interactions scores were associated with Spp1 and Apoe signaling, which were common to both astrocytes and fibroblasts.
+
+10) Macrophages also displayed subtype specificity in signaling to astrocytes and fibroblasts. For example, Jag1-Notch signaling was largely specific to Macrophage-A-astrocyte interaction, whereas IL1α/β-IL1r1 signaling was specific to Macrophage-B-fibroblast interaction. In summary, our analysis highlights the utility of our sc-RNAseq dataset in identifying potential signaling mechanisms that mediate astrogliosis and fibrosis after SCI.
+
