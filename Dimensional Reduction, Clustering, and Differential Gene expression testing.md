@@ -16,7 +16,7 @@
 
 "By default, we return 2,000 features per dataset. These will be used in downstream analysis, like PCA."
 
-"Next, we apply a linear transformation ('scaling') that is a standard pre-processing step prior to dimensional reduction techniques like PCA." (this step already done?)
+"Next, we apply a linear transformation ('scaling') that is a standard pre-processing step prior to dimensional reduction techniques like PCA."
 
 https://satijalab.org/seurat/v3.2/pbmc3k_tutorial.html
 
