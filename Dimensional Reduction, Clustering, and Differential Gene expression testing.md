@@ -27,6 +27,20 @@ https://satijalab.org/seurat/v3.0/dim_reduction_vignette.html
 
 2) The top 15 principal components (PCs) were selected based on the “elbow” point heuristic in a scree plot which quantifies the contribution of variance by each principal component.
 
+
+---
+
+he first thing to look at is the PCA scree-plot, showing the proportion of variance explained by each component. We are looking for a “knee” in the plot, where additional PCs do not bring much more new information.
+
+For this purpose, Seurat provides the function PCElbowPlot, that displays the standard-deviation of each PC.
+
+`PCElbowPlot(sobj, num.pc = 40)`
+
+
+https://gtpb.github.io/ADER18S/pages/tutorial-seurat-mca
+
+--- 
+
 3) Using these components, a nearest-neighbor graph and shared-nearest-neighbor graph were generated with “k.neighbors” set to 20 by default.
 
 4) To visualize the cells, we generate a UMAP plot with default Seurat parameters using cell coordinates in PCA-space using the top 15 PCs.
