@@ -43,7 +43,7 @@ One way to investigate cellular responses to injury is through transcriptomic pr
 9) Taken together, our analysis of DEGs between major cell types uncovers highly specific molecular identifiers, many of which are non-canonical and display temporal specificity.
 
 
-<h3> Summary Outline for "Myeloid analysis reveals temporal changes in macrophage and microglial subtypes" </h3>
+<h3> Summary for "Myeloid analysis reveals temporal changes in macrophage and microglial subtypes" </h3>
 
 1) To determine the heterogeneity within the myeloid population, clustering analysis was performed on myeloid cells and visualized on a separate UMAP (Fig. 2a, b), which revealed two large clusters corresponding to microglia and peripherally-derived myeloid cells as identified by annotated markers (Extended Data Fig. 3). 
 
@@ -77,4 +77,4 @@ One way to investigate cellular responses to injury is through transcriptomic pr
 
 16) Consistent with our sequencing data, the monocytes were the predominant myeloid populations at 1 dpi, and subsequently decreased at 7dpi, whereas Macrophage-A (ApoElo) and Macrophage-B (ApoEhi) were the most represented macrophage subtypes at 1 and 7dpi, respectively (Fig. 3e).
 
-<h3> Summary Outline for Vascular heterogeneity analysis identifies tip cell dynamics </h3>
+<h3> Summary for Vascular heterogeneity analysis identifies tip cell dynamics </h3>
