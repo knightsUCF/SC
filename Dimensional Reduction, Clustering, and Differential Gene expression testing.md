@@ -20,6 +20,22 @@ load data
 library(Seurat)
 pbmc <- readRDS(file = "../data/pbmc3k_final.rds")
 ```
+
+cell.embeddings: stores the coordinates for each cell in low-dimensional space.
+
+feature.loadings: stores the weight for each feature along each dimension of the embedding
+
+feature.loadings.projected: Seurat typically calculate the dimensional reduction on a subset of genes (for example, high-variance genes), and then project that structure onto the entire dataset (all genes). The results of that projection (calculated with ProjectDim) are stored in this slot. Note that the cell loadings will remain unchanged after projection but there are now feature loadings for all feature
+
+stdev: The standard deviations of each dimension. Most often used with PCA (storing the square roots of the eigenvalues of the covariance matrix) and can be useful when looking at the drop off in the amount of variance that is explained by each successive dimension.
+
+key: Sets the column names for the cell.embeddings and feature.loadings matrices. For example, for PCA, the column names are PC1, PC2, etc., so the key is “PC”.
+
+jackstraw: Stores the results of the jackstraw procedure run using this dimensional reduction technique. Currently supported only for PCA.
+
+misc: Bonus slot to store any other information you might want
+
+
 ---
 
 
