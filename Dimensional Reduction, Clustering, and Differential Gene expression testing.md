@@ -10,7 +10,7 @@
 
 
 
-<h3>  How to store and interact with dimensional reduction information (such as the output from RunPCA)  </h3>
+How to store and interact with dimensional reduction information (such as the output from RunPCA)
 
 "We next use the count matrix to create a Seurat object. The object serves as a container that contains both data (like the count matrix) and analysis (like PCA, or clustering results)"
 
