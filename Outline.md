@@ -183,6 +183,72 @@ Wet lab, TODO: review
 
 Wet lab, TODO: review
 
+<h3> Tissue Quantifications </h3>
+
+Wet lab, TODO: review
+
+<h3> Flow Cytometry </h3>
+
+Wet lab, TODO: review
+
+<h3> Single cell RNA-sequencing using 10X Genomics platform </h3>
+
+1) Two biological replicates for each time point for a total of 8 samples were sequenced with a median of ~8000 cells per sample.
+
+2) The median of mean reads per cell across samples was > 55,000 and median sequencing saturation was 81.2%.
+
+3) Libraries for all samples were prepared according to Chromium Single Cell 3’ Library and Gel Bead Kit v2 instructions (10X Genomics, PN-120237) and indexed with Chromium i7 Multiplex Kits (10X Genomics, PN-120262).
+
+4) Primers contain i) a 16nt 10X barcode, ii) a 10nt Unique Molecular Identifier, iii) a poly-dT primer sequence, and iv) an Illumina Read 1 (R1) sequence to produce single-stranded, barcoded complementary DNA (cDNA) from poly-adenylated mRNA. 
+
+5) Reads were then filtered to remove UMIs and barcodes with single base substitution errors and finally used for UMI counting. The output was a count matrix containing all UMI counts for every droplet. CellRanger v2.2.0 was used for the first set of replicates and v3.0.1 for the second set of replicates.
+
+
+<h3> Preprocessing and Quality Control </h3>
+
+1) First, cell barcodes were ranked according to UMI count and visualized in a log-total UMI count vs log-rank plot. A spline curve was fit to the data to identify knee and inflection points. At least all data points above the knee were considered cell-containing droplets.
+
+2) In order to further distinguish cells from data below the knee, we used the emptyDrops function from the DropletUtils R package52 using the following fixed parameters for all sample: lower = 250; max fit.bounds = 1e06; FDR = 0.001; ignore = 10.
+
+3) Some parameters varied between samples accordingly: “retain” was set to knee point values, and “lower” was set to inflection point values. The result was a filtered count matrix of all putative cell-containing droplets. In order to distinguish low quality cells, we considered cell-level metrics such as library size, percentage of UMIs mapping to mitochondrial genes, and doublet detection algorithm outputs. 
+
+4) We observed that removing cells in the lowest quantiles of total UMI counts preferentially selected against endothelial cells, while removing cells in the highest quantiles of mitochondrial percentage preferentially selected against astrocytes.
+
+5) To avoid bias due to any one metric, we used a multivariate approach to automatic outlier detection as implemented in the Scater R package45, which performs principal component analysis on the quality control metrics to determine outliers.
+
+6) In order to remove potential doublets, we applied the Scrublet Python package47 for each individual sample. Cells from the data that have high local densities of simulated doublets are flagged and removed.
+
+7) We set the expected_doublet_rate for each sample according to the estimated doublet rate per cells sequenced as published by 10X, and default values for all other parameters.
+
+8) During downstream analysis, we observed small, unidentifiable clusters that co-expressed marker genes for two different cell-types, and removed these cells as they were likely to be multiplets not detected by Scrublet. 
+
+9) Additionally, we identified a cluster enriched for hemoglobin genes (Hbb-bs, Hbb-bt, etc.) which was removed from downstream analyses.
+
+<h3> Normalization and Batch Correction </h3>
+
+1) To generate the full SCI dataset, all samples were processed and combined using Seurat v353.
+
+2) After filtering each sample count matrix for genes that were expressed in at least 10 cells, each dataset was independently normalized and scaled using the SCTransform function.
+
+3) To remove cell-cycle genes as a confounding source of variation, mitochondrial percentage and cell cycle scores based on the expression of canonical G2M and S phase markers were computed for each cell. Cell cycle genes were provided through the Seurat tutorial.
+
+4) These score values were then used as input for the “vars.to.regress” argument in the SCTransfrom() function.
+
+5) To identify shared and unique molecular cell-types across datasets and time-points, sample expression matrices were batch-corrected using Seurat’s Data Integration workflow.
+
+6) For the full SCI dataset, the 2000 most variables genes were used as input for the “anchor. features” argument of the FindIntegrationAnchors() function, where the variance of a gene was measured as the residual divided by the expected variance under the SCTransfrom() model. This resulted in a single, batch-corrected expression matrix for containing all cells.
+
+7) For the analysis of the myeloid cells, we tested a similar batch correction as described above. However, we observed that some microglia from the uninjured spinal cord were classified under a peripheral macrophage subset but not under BA-Macrophage (data not shown). 
+
+8) We instead (potential misclassification) combined sample datasets across time-points for each replicate and subsequently performed normalization for each of the two larger datasets as above (i.e. normalize across times and batch-correct across replicates). For myeloid integration, the 2000 most variable genes were used. For the vascular cells, no obvious misclassifications were noted. 
+
+9) We proceeded with normalization and batch correction as above, using the 2000 most variable genes for downstream analysis.
+
+10) For the macroglia cells, we again observe no obvious misclassifications and proceeded with normalization and batch correction. However because of the low numbers of macroglia cells in one of the uninjured sample replicates, we adjusted the “k.filter” parameter to 100 for the FindIntegrationAnchors() function.
+
+<h3> Dimensional Reduction, Clustering, and Differential Gene expression testing </h3>
+
+
 
 
 
