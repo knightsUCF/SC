@@ -1,4 +1,4 @@
-# Overview
+# Outline of Steps
 
 - go through research paper and outline steps
 
