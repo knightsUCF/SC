@@ -3,6 +3,8 @@ library(Seurat)
 library(patchwork)
 library(Matrix)
 
+
+
 # 1) In order to measure the greatest gene expression variation among all the SCI cells,
 # we first performed PCA on the batch-corrected expression matrix for the top 2000 variable genes taken from above.
 
