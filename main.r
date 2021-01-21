@@ -36,8 +36,6 @@ ElbowPlot(pbmc, 15)
 # graph were generated with “k.neighbors” set to 20 by default.
 
 
-# S3 method for class 'Seurat'
-
 FindNeighbors(
   pbmc,
   reduction = "pca",
