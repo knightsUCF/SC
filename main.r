@@ -1,4 +1,4 @@
-```R
+
 library(dplyr)
 library(Seurat)
 library(patchwork)
@@ -28,4 +28,4 @@ pbmc <- RunPCA(pbmc, features = VariableFeatures(object = pbmc))
 
 
 PCElbowPlot(pbmc, num.pc = 15)
-```
+
