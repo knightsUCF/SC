@@ -55,6 +55,8 @@ FindNeighbors(
   graph.name = NULL,
 )
 
+
+
 # 4) To visualize the cells, we generate a UMAP plot with default Seurat parameters using cell coordinates in PCA-space
 # using the top 15 PCs.
 
