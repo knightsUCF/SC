@@ -27,10 +27,7 @@ pbmc <- RunPCA(pbmc, features = VariableFeatures(object = pbmc))
 # point heuristic in a scree plot which quantifies the contribution of variance
 # by each principal component.
 
-ElbowPlot(pbmc, 15)
-
-# only returns a graph
-# https://github.com/satijalab/seurat/blob/b56d194939379460db23380426d3896b54d91ab6/R/visualization.R
+ElbowPlot(pbmc, 15) # only returns a graph - https://github.com/satijalab/seurat/blob/b56d194939379460db23380426d3896b54d91ab6/R/visualization.R
 
 
 
