@@ -57,10 +57,59 @@ FindNeighbors(
 # 4) To visualize the cells, we generate a UMAP plot with default Seurat parameters using cell coordinates in PCA-space
 # using the top 15 PCs.
 
-DimPlot(pbmc, reduction = "umap") # Plot UMAP, coloring cells by cell type, reticulate::py_install(packages ='umap-learn'), https://github.com/satijalab/seurat/issues/631
+# DimPlot(pbmc, reduction = "umap") # Plot UMAP, coloring cells by cell type, reticulate::py_install(packages ='umap-learn'), https://github.com/satijalab/seurat/issues/631
+
+
+# 5) In order to cluster the cells based on similarity of expression,
+# we ran the FindClusters() function on the shared-nearest-neighbor graph with default parameters.
+
+
+# FindClusters(pbmc, genes.use = NULL, pc.use = NULL, k.param = 30,
+#             k.scale = 25, plot.SNN = FALSE, prune.SNN = 1/15, save.SNN = FALSE,
+#             reuse.SNN = FALSE, do.sparse = FALSE, modularity.fxn = 1,
+#             resolution = 0.8, algorithm = 1, n.start = 100, n.iter = 10,
+#             random.seed = 0, verbose = T)
+
+pbmc <- FindNeighbors(pbmc, dims = 1:10) # need this to run FindClusters() TODO: pick correct parameters for FindNeighbors() above
+pbmc <- FindClusters(pbmc, resolution = 0.5)
+
+
+# 6) For the myeloid, vascular, and macroglial cells,
+# we performed similar analyses as described above, with a few modifications.
+# In order to identify reproducible sub-clusters of cells,
+# we performed the same graph-based clustering through a range of PCs,
+# “k.neighbor” and “resolution” parameters and inspected cluster memberships for stable configurations.
+# For the myeloid, vascular, and macroglia, we took the top 12, 11,
+# and 8 PCs and set resolutions to 0.5, 0.3, and 0.45 respectively.
+
+# TODO: repeat of above steps
 
 
 
+# 7) To identify marker genes for each cluster, we used the FindAllMarkers() function
+# using default parameters, which implements a Wilcoxon Rank Sum test comparing
+# gene expression of cells within a given cluster versus all other cells.
+
+FindAllMarkers(
+  pbmc,
+  assay = NULL,
+  features = NULL,
+  logfc.threshold = 0.25,
+  test.use = "wilcox",
+  slot = "data",
+  min.pct = 0.1,
+  min.diff.pct = -Inf,
+  node = NULL,
+  verbose = TRUE,
+  only.pos = FALSE,
+  max.cells.per.ident = Inf,
+  random.seed = 1,
+  latent.vars = NULL,
+  min.cells.feature = 3,
+  min.cells.group = 3,
+  pseudocount.use = 1,
+  return.thresh = 0.01,
+)
 
 
 
@@ -115,5 +164,44 @@ DimPlot(pbmc, reduction = "umap") # Plot UMAP, coloring cells by cell type, reti
 #          FAM110A, ATP1A1, TRADD, PPA1, CCDC109B, ABRACL, CTD-2006K23.1, WARS, VMO1, FYB 
 #          Computing nearest neighbor graph
 #          Computing SNN
-#          Error: Cannot find 'umap' in this Seurat object
-#          > 
+#          Computing nearest neighbor graph
+#          Computing SNN
+#          Modularity Optimizer version 1.3.0 by Ludo Waltman and Nees Jan van Eck
+#          
+#          Number of nodes: 2638
+#          Number of edges: 95965
+#          
+#          Running Louvain algorithm...
+#          0%   10   20   30   40   50   60   70   80   90   100%
+#            [----|----|----|----|----|----|----|----|----|----|
+#               **************************************************|
+#               Maximum modularity in 10 random starts: 0.8723
+#             Number of communities: 9
+#             Elapsed time: 0 seconds
+#             Calculating cluster 0
+#             For a more efficient implementation of the Wilcoxon Rank Sum Test,
+#             (default method for FindMarkers) please install the limma package
+#             --------------------------------------------
+#               install.packages('BiocManager')
+#             BiocManager::install('limma')
+#             --------------------------------------------
+#               After installation of limma, Seurat will automatically use the more 
+#             efficient implementation (no further action necessary).
+#             This message will be shown once per session
+#             |++++++++++++++++++++++++++++++++++++++++++++++++++| 100% elapsed=38s  
+#             Calculating cluster 1
+#             |++++++++++++++++++++++++++++++++++++++++++++++++++| 100% elapsed=56s  
+#             Calculating cluster 2
+#             |++++++++++++++++++++++++++++++++++++++++++++++++++| 100% elapsed=27s  
+#             Calculating cluster 3
+#             |++++++++++++++++++++++++++++++++++++++++++++++++++| 100% elapsed=42s  
+#             Calculating cluster 4
+#             |++++++++++++++++++++++++++++++++++++++++++++++++++| 100% elapsed=35s  
+#             Calculating cluster 5
+#             |++++++++++++++++++++++++++++++++++++++++++++++++++| 100% elapsed=52s  
+#             Calculating cluster 6
+#             |++++++++++++++++++++++++++++++++++++++++++++++++++| 100% elapsed=58s  
+#             Calculating cluster 7
+#             |++++++++++++++++++++++++++++++++++++++++++++++++++| 100% elapsed=56s  
+#             Calculating cluster 8
+#             |++++++++++++++++++++++++++++++++++++++++++++++++++| 100% elapsed=01m 29s
