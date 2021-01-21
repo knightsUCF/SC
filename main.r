@@ -57,7 +57,6 @@ FindNeighbors(
 # 4) To visualize the cells, we generate a UMAP plot with default Seurat parameters using cell coordinates in PCA-space
 # using the top 15 PCs.
 
-
 DimPlot(pbmc, reduction = "umap") # Plot UMAP, coloring cells by cell type, reticulate::py_install(packages ='umap-learn'), https://github.com/satijalab/seurat/issues/631
 
 
