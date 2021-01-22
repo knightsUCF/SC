@@ -113,6 +113,36 @@ FindAllMarkers(
 
 
 
+# 8) We repeated this analysis to identify marker genes distinguishing subsets within a cell-type.
+
+# TODO: research
+
+
+# 9) To infer the functional relevance of sub-clusters,
+# we performed gene ontology enrichment analyses on the top 50 differentially
+# expressed genes using Fisher’s Exact test as implemented in the topGO R package.
+# For the enrichment analyses of the gene expression changes in astrocytes,
+# our initial analysis revealed very few differentially expressed genes
+# between the uninjured and 1dpi astrocytes, which we attributed to the
+# low numbers of uninjured astrocytes captured.
+# Therefore, we supplemented our uninjured astrocyte dataset with 
+# ACNT1 and ACNT2 astrocyte data from the previously published mouse CNS single-cell atlas dataset.
+# We also supplemented our uninjured OPC dataset in order to validate
+# that our uninjured cells were more transcriptional similar to the
+# external reference cells than to our injured cells.
+
+
+# TODO: research
+
+
+# 10) To account for differences in sequencing depth between our dataset and the external dataset,
+# we performed differential expression tests using MAST as implemented in Seurat.
+# We used all differentially expressed genes (p_val_adj < 0.001) as input for gene ontology analysis.
+
+
+# TODO: research
+
+
 # Performing log-normalization
 # 0%   10   20   30   40   50   60   70   80   90   100%
 #   [----|----|----|----|----|----|----|----|----|----|
