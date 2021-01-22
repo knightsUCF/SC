@@ -29,6 +29,8 @@ pbmc <- RunPCA(pbmc, features = VariableFeatures(object = pbmc))
 
 ElbowPlot(pbmc, 15) # only returns a graph - https://github.com/satijalab/seurat/blob/b56d194939379460db23380426d3896b54d91ab6/R/visualization.R
 
+# TODO: select only these "top 15 principal components"
+
 
 
 # 3) Using these components, a nearest-neighbor graph and shared-nearest-neighbor
