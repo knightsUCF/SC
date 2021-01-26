@@ -1,3 +1,10 @@
+# DPLYR
+
+Dependency not installing on Linux, works on Mac.
+
+https://cran.r-project.org/web/packages/dplyr/index.html
+
+
 # Cran Servers
 
 https://cran.r-project.org/mirrors.html
