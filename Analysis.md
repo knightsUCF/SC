@@ -2,6 +2,8 @@
 
 <h3> Introduction </h3>
 
+---
+
 Our goal is to replicate the results of the single cell paper using the Seurat library, and R.
 
 "Single cell analysis of the cellular heterogeneity and interactions in the injured mouse spinal cord": https://www.biorxiv.org/content/10.1101/2020.05.13.094854v1.full
