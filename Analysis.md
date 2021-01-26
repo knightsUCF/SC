@@ -1,6 +1,6 @@
 # Analysis
 
----
+
 
 <h3> Introduction </h3>
 
@@ -11,7 +11,6 @@ Our goal is to replicate the results of the single cell paper using the Seurat l
 
 Seurat: https://satijalab.org/seurat/
 
----
 
 <h3> Outline </h3>
 
@@ -23,7 +22,6 @@ We are starting on the section: "Dimensional Reduction, Clustering, and Differen
 
 TODO: genomic data sequencing might require starting on the data preprocessing section. Currently we are using the toy data given by the Seurat tutorial.
 
----
 
 <h3> Libraries </h3>
 
