@@ -2,7 +2,7 @@
 
 
 
-<h3> Introduction </h3>
+<h2> Introduction </h2>
 
 
 Our goal is to replicate the results of the single cell paper using the Seurat library, and R.
@@ -18,7 +18,7 @@ https://www.biorxiv.org/content/10.1101/2020.05.13.094854v1.full
 https://satijalab.org/seurat/
 
 
-<h3> Outline </h3>
+<h2> Outline </h2>
 
 We are using this outline to replicate the results in the study: 
 
@@ -29,7 +29,7 @@ We are starting on the section: "Dimensional Reduction, Clustering, and Differen
 TODO: genomic data sequencing might require starting on the data preprocessing section. Currently we are using the toy data given by the Seurat tutorial.
 
 
-<h3> Libraries </h3>
+<h2> Libraries </h2>
 
 We will need to import the following libraries:
 
