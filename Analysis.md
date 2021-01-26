@@ -8,9 +8,13 @@ https://www.biorxiv.org/content/10.1101/2020.05.13.094854v1.full
 
 <h3> Outline </h3>
 
-We are using this outline to replicate the results in the study:
+We are using this outline to replicate the results in the study: 
 
 https://github.com/knightsUCF/SC/blob/main/Outline.md
+
+We are starting on the section: "Dimensional Reduction, Clustering, and Differential Gene expression testing"
+
+TODO: genomic data sequencing might require starting on the data preprocessing section. Currently we are using the toy data given by the Seurat tutorial.
 
 <h3> Libraries </h3>
 
