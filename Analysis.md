@@ -17,6 +17,7 @@ https://www.biorxiv.org/content/10.1101/2020.05.13.094854v1.full
 
 https://satijalab.org/seurat/
 
+<br>
 
 <h2> Outline </h2>
 
@@ -28,6 +29,7 @@ We are starting on the section: "Dimensional Reduction, Clustering, and Differen
 
 TODO: genomic data sequencing might require starting on the data preprocessing section. Currently we are using the toy data given by the Seurat tutorial.
 
+<br>
 
 <h2> Libraries </h2>
 
