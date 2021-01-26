@@ -1,3 +1,7 @@
+# Set Working Directory
+
+When opening project set the working directory. #TODO later find out how we can automatically set up this working directory.
+
 # DPLYR
 
 Dependency not installing on Linux, works on Mac.
