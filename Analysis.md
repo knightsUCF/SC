@@ -1,4 +1,4 @@
-# Analysis of Single Cell ...
+# Analysis of Results in "Single cell analysis of the cellular heterogeneity and interactions in the injured mouse spinal cord"
 
 <h3> Introduction </h3>
 
