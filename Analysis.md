@@ -1,8 +1,9 @@
 # Analysis
 
+---
+
 <h3> Introduction </h3>
 
----
 
 Our goal is to replicate the results of the single cell paper using the Seurat library, and R.
 
