@@ -1,3 +1,7 @@
+# Cran Servers
+
+https://cran.r-project.org/mirrors.html
+
 
 # General Plan
 
