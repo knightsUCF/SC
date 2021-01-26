@@ -1,8 +1,10 @@
-# Analysis of Results in "Single cell analysis of the cellular heterogeneity and interactions in the injured mouse spinal cord"
+# Analysis
 
 <h3> Introduction </h3>
 
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+Our goal is to replicate the results of the paper: "Single cell analysis of the cellular heterogeneity and interactions in the injured mouse spinal cord"
+
+https://www.biorxiv.org/content/10.1101/2020.05.13.094854v1.full
 
 <h3> Outline </h3>
 
