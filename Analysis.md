@@ -74,6 +74,7 @@ ElbowPlot(pbmc, 15) # only returns a graph - https://github.com/satijalab/seurat
 # TODO: select only these "top 15 principal components"
 ```
 
+<br> 
 
 <h2> Finding Neighbors </h2>
 
