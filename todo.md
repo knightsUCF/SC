@@ -1,3 +1,9 @@
+# Seurat Documentation
+
+https://cran.r-project.org/web/packages/Seurat/Seurat.pdf
+
+
+
 # Plan
 
 - while waiting for the dependency issue to be resolved, continue
