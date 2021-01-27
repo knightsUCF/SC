@@ -43,9 +43,9 @@ library(patchwork)
 
 <br>
 
-<h2> Processing Data </h2>
+<h2> 1. Processing Data </h2>
 
-<i> "1) In order to measure the greatest gene expression variation among all the SCI cells, we first performed PCA on the batch-corrected expression matrix for the top 2000 variable genes taken from above." </i>
+<i> "In order to measure the greatest gene expression variation among all the SCI cells, we first performed PCA on the batch-corrected expression matrix for the top 2000 variable genes taken from above." </i>
 
 ```R
 variable_genes_count = 10
@@ -64,9 +64,9 @@ pbmc <- RunPCA(pbmc, features = VariableFeatures(object = pbmc))
 
 <br>
 
-<h2> Selecting Principal Components </h2>
+<h2> 2. Selecting Principal Components </h2>
 
-<i> "2) The top 15 principal components (PCs) were selected based on the “elbow” point heuristic in a scree plot which quantifies the contribution of variance by each principal component." </i>
+<i> "The top 15 principal components (PCs) were selected based on the “elbow” point heuristic in a scree plot which quantifies the contribution of variance by each principal component." </i>
 
 ```R
 ElbowPlot(pbmc, 15) # only returns a graph - https://github.com/satijalab/seurat/blob/b56d194939379460db23380426d3896b54d91ab6/R/visualization.R
@@ -76,9 +76,9 @@ ElbowPlot(pbmc, 15) # only returns a graph - https://github.com/satijalab/seurat
 
 <br> 
 
-<h2> Finding Neighbors </h2>
+<h2> 3. Finding Neighbors </h2>
 
-<i> "3) Using these components, a nearest-neighbor graph and shared-nearest-neighbor graph were generated with “k.neighbors” set to 20 by default." </i>
+<i> "Using these components, a nearest-neighbor graph and shared-nearest-neighbor graph were generated with “k.neighbors” set to 20 by default." </i>
 
 ```R
 pbmc <- FindNeighbors(
