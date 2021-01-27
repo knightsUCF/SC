@@ -6,6 +6,10 @@
 
 - after we exhaust the other steps we can determine what is left in terms of fixing dependencies
 
+- upgrading to latest Ubuntu, not enough space: https://www.zdnet.com/article/how-to-upgrade-from-ubuntu-linux-16-04-to-18-04/
+
+
+
 
 # Set Working Directory
 
