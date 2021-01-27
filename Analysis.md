@@ -154,6 +154,13 @@ pbmc <- FindNeighbors(
   graph.name = NULL,
 )
 ```
+
+<h4>Output</h4>
+
+	Computing nearest neighbor graph
+	Computing SNN
+
+
 <br>
 
 <h2>4. UMAP Plot </h2>
