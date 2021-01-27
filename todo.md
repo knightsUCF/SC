@@ -1,3 +1,12 @@
+# Plan
+
+- while waiting for the dependency issue to be resolved, continue
+
+- we have to continue on the Mac, so check one more time if somehow we can resolve this, if not we just have to keep moving, while not getting our feet stuck in time sinks, just yet
+
+- after we exhaust the other steps we can determine what is left in terms of fixing dependencies
+
+
 # Set Working Directory
 
 When opening project set the working directory. #TODO later find out how we can automatically set up this working directory.
