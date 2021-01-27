@@ -48,7 +48,7 @@ library(patchwork)
 <i> "In order to measure the greatest gene expression variation among all the SCI cells, we first performed PCA on the batch-corrected expression matrix for the top 2000 variable genes taken from above." </i>
 
 ```R
-variable_genes_count = 10
+variable_genes_count = 10 # replace with 2000 later when custom data is processed
 
 pbmc.data <- Read10X(data.dir = 'data/filtered_gene_bc_matrices/hg19')
 pbmc <- CreateSeuratObject(counts = pbmc.data, project = "pbmc3k", min.cells = 3, min.features = 200)
