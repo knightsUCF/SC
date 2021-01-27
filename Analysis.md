@@ -75,3 +75,29 @@ ElbowPlot(pbmc, 15) # only returns a graph - https://github.com/satijalab/seurat
 ```
 
 
+<h2> Finding Neighbors </h2>
+
+<i> "3) Using these components, a nearest-neighbor graph and shared-nearest-neighbor graph were generated with “k.neighbors” set to 20 by default." </i>
+
+```R
+pbmc <- FindNeighbors(
+  pbmc,
+  reduction = "pca",
+  dims = 1:10,
+  assay = NULL,
+  features = NULL,
+  k.param = 20,
+  compute.SNN = TRUE,
+  prune.SNN = 1/15,
+  nn.method = "rann",
+  annoy.metric = "euclidean",
+  nn.eps = 0,
+  verbose = TRUE,
+  force.recalc = FALSE,
+  do.plot = FALSE,
+  graph.name = NULL,
+)
+```
+
+
+
