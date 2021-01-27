@@ -37,8 +37,21 @@ Selection: 7
 Called from: eval(substitute(browser(skipCalls = skip), list(skip = 7 - which)), 
     envir = sys.frame(which))
     
-    
 
+     CheckDots(...)
+      if (!is.null(x = dims)) {
+        assay <- DefaultAssay(object = object[[reduction]])
+        data.use <- Embeddings(object = object[[reduction]])
+        if (max(dims) > ncol(x = data.use)) {
+          stop("More dimensions specified in dims than have been computed")
+        }
+        data.use <- data.use[, dims]
+        neighbor.graphs <- FindNeighbors(object = data.use, 
+          k.param = k.param, compute.SNN = compute.SNN, prune.SNN = prune.SNN, 
+          nn.method = nn.method, annoy.metric = annoy.metric, 
+          nn.eps = nn.eps, verbose = verbose, force.recalc = force.recalc, 
+          ...)
+      }
 
 
 
