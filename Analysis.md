@@ -27,7 +27,7 @@ https://github.com/knightsUCF/SC/blob/main/Outline.md
 
 We are starting on the section: "Dimensional Reduction, Clustering, and Differential Gene expression testing"
 
-TODO: genomic data sequencing might require starting on the data preprocessing section. Currently we are using the toy data given by the Seurat tutorial.
+TODO: raw genomic data might require starting on the data preprocessing section. Currently we are using the toy data given by the Seurat tutorial.
 
 <br>
 
