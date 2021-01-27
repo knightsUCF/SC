@@ -124,10 +124,14 @@ pbmc <- RunPCA(pbmc, features = VariableFeatures(object = pbmc))
 <i> "The top 15 principal components (PCs) were selected based on the “elbow” point heuristic in a scree plot which quantifies the contribution of variance by each principal component." </i>
 
 ```R
-ElbowPlot(pbmc, 15) # only returns a graph - https://github.com/satijalab/seurat/blob/b56d194939379460db23380426d3896b54d91ab6/R/visualization.R
+plot(ElbowPlot(pbmc, 15)) # only returns a graph - https://github.com/satijalab/seurat/blob/b56d194939379460db23380426d3896b54d91ab6/R/visualization.R
 
 # TODO: select only these "top 15 principal components"
 ```
+
+<h3>Output</h3>
+
+
 
 <br> 
 
