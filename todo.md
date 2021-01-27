@@ -14,6 +14,31 @@ options(error=recover)
 
 options(show.error.locations=TRUE)
 
+Error in CheckDots(...) : argument is missing, with no default
+
+Enter a frame number, or 0 to exit   
+
+1: source("~/Documents/SC/sc.r")
+
+2: withVisible(eval(ei, envir))
+
+3: eval(ei, envir)
+
+4: eval(ei, envir)
+
+5: sc.r#37: FindNeighbors(pbmc, reduction = "pca", dims = 1:10, assay = NULL, features = NULL, k.param = 20, compute.SNN = TRUE, prune.SNN = 1/15, nn.me
+
+6: FindNeighbors.Seurat(pbmc, reduction = "pca", dims = 1:10, assay = NULL, features = NULL, k.param = 20, compute.SNN = TRUE, prune.SNN = 1/15, nn.meth
+
+7: CheckDots(...)
+
+Selection: 7
+
+Called from: eval(substitute(browser(skipCalls = skip), list(skip = 7 - which)), 
+    envir = sys.frame(which))
+    
+    
+
 
 
 
