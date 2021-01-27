@@ -62,7 +62,7 @@ pbmc <- ScaleData(pbmc, features = all.genes)
 pbmc <- RunPCA(pbmc, features = VariableFeatures(object = pbmc))
 ```
 
-Output
+<h4>Output</h4>
 
 
 	Performing log-normalization
