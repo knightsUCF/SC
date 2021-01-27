@@ -131,7 +131,7 @@ plot(ElbowPlot(pbmc, 15)) # only returns a graph - https://github.com/satijalab/
 
 <h3>Output</h3>
 
-
+![Elbow Plot](https://github.com/knightsUCF/SC/blob/main/charts/Rplot01.png)
 
 <br> 
 
