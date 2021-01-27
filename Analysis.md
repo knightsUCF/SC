@@ -62,3 +62,12 @@ pbmc <- ScaleData(pbmc, features = all.genes)
 pbmc <- RunPCA(pbmc, features = VariableFeatures(object = pbmc))
 ```
 
+<br>
+
+<h2> Selecting Principal Components </h2>
+
+<i> "2) The top 15 principal components (PCs) were selected based on the “elbow” point heuristic in a scree plot which quantifies the contribution of variance by each principal component. </i>
+
+
+
+
