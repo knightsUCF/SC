@@ -99,6 +99,16 @@ pbmc <- FindNeighbors(
   graph.name = NULL,
 )
 ```
+<br>
+
+<h2> UMAP Plot </h2>
+
+<i>To visualize the cells, we generate a UMAP plot with default Seurat parameters using cell coordinates in PCA-space using the top 15 PCs. </i>
+
+```R
+# DimPlot(pbmc, reduction = "umap") # Plot UMAP, coloring cells by cell type, reticulate::py_install(packages ='umap-learn'), https://github.com/satijalab/seurat/issues/631
+```
+
 
 
 
