@@ -101,7 +101,7 @@ pbmc <- FindNeighbors(
 ```
 <br>
 
-<h2> UMAP Plot </h2>
+<h2>4. UMAP Plot </h2>
 
 <i>To visualize the cells, we generate a UMAP plot with default Seurat parameters using cell coordinates in PCA-space using the top 15 PCs. </i>
 
