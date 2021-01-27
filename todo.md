@@ -8,6 +8,12 @@
 
 - upgrading to latest Ubuntu, not enough space: https://www.zdnet.com/article/how-to-upgrade-from-ubuntu-linux-16-04-to-18-04/
 
+- entering these two things into the R console, will show where the error is coming from:
+
+options(error=recover) 
+
+options(show.error.locations=TRUE)
+
 
 
 
