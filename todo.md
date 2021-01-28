@@ -4,6 +4,11 @@ https://rpubs.com/kshekhar/349874
 
 https://bioinformatics.stackexchange.com/questions/5225/script-to-allow-gene-set-enrichment-analysis-of-10x-genomics-data-in-r
 
+"Seruat will give you a list of genes which it thinks are upregulated in a particular cluster. Look at the functions that talk about marker genes - these functions basically do a DE analysis of the genes in one cluster compared to the others.
+
+Then take that list and feed it to any standard GO analysis tool. Have a look at the topGO topKEGG and geneSetTest functions in the limma package, the GOStats package and the gsea. All should be suitable. The GOSeq package is designed to compensate for gene length bias in RNA-seq experiments. As 10X only samples 3'-tags, there shouldn't be any gene-length bias in the data, so this shouldn't be an issue."
+
+
 # TopGO with Seurat
 
 https://ucdavis-bioinformatics-training.github.io/2017_2018-single-cell-RNA-sequencing-Workshop-UCD_UCB_UCSF/day3/scRNA_Workshop-PART6.html
