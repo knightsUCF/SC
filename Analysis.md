@@ -243,3 +243,34 @@ FindAllMarkers(
 )
 ```
 
+<h4>Output</h4>
+
+```
+Calculating cluster 0
+For a more efficient implementation of the Wilcoxon Rank Sum Test,
+(default method for FindMarkers) please install the limma package
+--------------------------------------------
+install.packages('BiocManager')
+BiocManager::install('limma')
+--------------------------------------------
+After installation of limma, Seurat will automatically use the more 
+efficient implementation (no further action necessary).
+This message will be shown once per session
+  |++++++++++++++++++++++++++++++++++++++++++++++++++| 100% elapsed=36s  
+Calculating cluster 1
+  |++++++++++++++++++++++++++++++++++++++++++++++++++| 100% elapsed=23s  
+Calculating cluster 2
+  |++++++++++++++++++++++++++++++++++++++++++++++++++| 100% elapsed=53s  
+Calculating cluster 3
+  |++++++++++++++++++++++++++++++++++++++++++++++++++| 100% elapsed=35s  
+Calculating cluster 4
+  |++++++++++++++++++++++++++++++++++++++++++++++++++| 100% elapsed=27s  
+Calculating cluster 5
+  |++++++++++++++++++++++++++++++++++++++++++++++++++| 100% elapsed=51s  
+Calculating cluster 6
+  |++++++++++++++++++++++++++++++++++++++++++++++++++| 100% elapsed=53s  
+Calculating cluster 7
+  |++++++++++++++++++++++++++++++++++++++++++++++++++| 100% elapsed=51s  
+Calculating cluster 8
+  |++++++++++++++++++++++++++++++++++++++++++++++++++| 100% elapsed=01m 28s
+```
