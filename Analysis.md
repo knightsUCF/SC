@@ -217,12 +217,12 @@ TODO: waiting on 10X genomic data processing pipeline on custom data, and which 
 
 <br>
 
-<h2>7. Identifying Marker Genes</h2>
+<h2>7. Finding Marker Genes</h2>
 
 <i>To identify marker genes for each cluster, we used the FindAllMarkers() function, using default parameters, which implements a Wilcoxon Rank Sum test comparing, gene expression of cells within a given cluster versus all other cells.</i>
 
 ```R
-FindAllMarkers(
+markers <- FindAllMarkers(
   pbmc,
   assay = NULL,
   features = NULL,
