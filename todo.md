@@ -2,7 +2,9 @@
 
 https://cran.r-project.org/web/packages/Seurat/Seurat.pdf
 
+# Check Dots
 
+"Seurat.checkdotsFor functions that have ...  as a parameter, this controls the behavior when anitem isn’t used. Can be one of warn, stop, or silent"
 
 # Plan
 
