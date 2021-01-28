@@ -1,6 +1,8 @@
-# Excellent Seurat / TopGO Tutorial
+# Seurat / TopGO Workflow
 
 https://rpubs.com/kshekhar/349874
+
+https://bioinformatics.stackexchange.com/questions/5225/script-to-allow-gene-set-enrichment-analysis-of-10x-genomics-data-in-r
 
 # TopGO with Seurat
 
