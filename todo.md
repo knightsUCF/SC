@@ -1,3 +1,13 @@
+# Format for GO
+
+https://support.bioconductor.org/p/132621/
+
+
+head(geneList)
+1095_s_at   1130_at   1196_at 1329_s_at 1340_s_at 1342_g_at 
+1.0000000 1.0000000 0.6223795 0.5412240 1.0000000 1.0000000
+
+
 # TopGO Gene List Format
 
 https://datacatz.wordpress.com/2018/01/19/gene-set-enrichment-analysis-with-topgo-part-1/
