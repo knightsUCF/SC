@@ -204,4 +204,32 @@ Number of communities: 9
 Elapsed time: 0 seconds
 ```
 
+<br>
+
+<h2>Identifying Marker Genes</h2>
+
+<i>To identify marker genes for each cluster, we used the FindAllMarkers() function, using default parameters, which implements a Wilcoxon Rank Sum test comparing, gene expression of cells within a given cluster versus all other cells.</i>
+
+```R
+FindAllMarkers(
+  pbmc,
+  assay = NULL,
+  features = NULL,
+  logfc.threshold = 0.25,
+  test.use = "wilcox",
+  slot = "data",
+  min.pct = 0.1,
+  min.diff.pct = -Inf,
+  node = NULL,
+  verbose = TRUE,
+  only.pos = FALSE,
+  max.cells.per.ident = Inf,
+  random.seed = 1,
+  latent.vars = NULL,
+  min.cells.feature = 3,
+  min.cells.group = 3,
+  pseudocount.use = 1,
+  return.thresh = 0.01,
+)
+```
 
