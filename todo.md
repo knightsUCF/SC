@@ -1,3 +1,9 @@
+# Selecting Mirror
+
+When a package, such as UMAP is not working, we can try installing from another mirror:
+
+chooseCRANmirror()
+
 # Seurat Documentation
 
 https://cran.r-project.org/web/packages/Seurat/Seurat.pdf
