@@ -175,6 +175,31 @@ pbmc <- FindNeighbors(
 # DimPlot(pbmc, reduction = "umap") # Plot UMAP, coloring cells by cell type, reticulate::py_install(packages ='umap-learn'), https://github.com/satijalab/seurat/issues/631
 ```
 
+<br>
 
+<h2>5. Finding Clusters</h2>
+
+<i>In order to cluster the cells based on similarity of expression, we ran the FindClusters() function on the shared-nearest-neighbor graph with default parameters.</i>
+
+```R
+pbmc <- FindClusters(pbmc, resolution = 0.5)
+```
+
+<h4>Output</h4>
+
+```
+Modularity Optimizer version 1.3.0 by Ludo Waltman and Nees Jan van Eck
+
+Number of nodes: 2638
+Number of edges: 96033
+
+Running Louvain algorithm...
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Maximum modularity in 10 random starts: 0.8720
+Number of communities: 9
+Elapsed time: 0 seconds
+```
 
 
