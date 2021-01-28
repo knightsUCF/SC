@@ -181,6 +181,8 @@ pbmc <- FindNeighbors(
 
 <i>In order to cluster the cells based on similarity of expression, we ran the FindClusters() function on the shared-nearest-neighbor graph with default parameters.</i>
 
+TODO: verify that we are running the method on the correct "shared-nearest-neighbor graph"
+
 ```R
 pbmc <- FindClusters(pbmc, resolution = 0.5)
 ```
