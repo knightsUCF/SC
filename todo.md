@@ -1,3 +1,10 @@
+# Custom Python Environment
+
+https://help.dreamhost.com/hc/en-us/articles/115000695551-Installing-and-using-virtualenv-with-Python-3
+
+https://support.rstudio.com/hc/en-us/articles/360023654474-Installing-and-Configuring-Python-with-RStudio
+
+
 # Selecting Mirror
 
 When a package, such as UMAP is not working, we can try installing from another mirror:
