@@ -206,6 +206,13 @@ Elapsed time: 0 seconds
 
 <br>
 
+<h2>6. Repeating Process on Different Set</h2>
+
+<i>For the myeloid, vascular, and macroglial cells, we performed similar analyses as described above, with a few modifications. In order to identify reproducible sub-clusters of cells, we performed the same graph-based clustering through a range of PCs, “k.neighbor” and “resolution” parameters and inspected cluster memberships for stable configurations. For the myeloid, vascular, and macroglia, we took the top 12, 11, and 8 PCs and set resolutions to 0.5, 0.3, and 0.45 respectively.<i>
+
+TODO: waiting on 10X genomic data processing pipeline on custom data, and which set of cells this should be run on
+
+
 <h2>7. Identifying Marker Genes</h2>
 
 <i>To identify marker genes for each cluster, we used the FindAllMarkers() function, using default parameters, which implements a Wilcoxon Rank Sum test comparing, gene expression of cells within a given cluster versus all other cells.</i>
