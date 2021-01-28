@@ -289,6 +289,8 @@ TODO: start on this once the 10X genomics data pipeline processes the custom dat
 
 <i>To infer the functional relevance of sub-clusters, we performed gene ontology enrichment analyses on the top 50 differentially, expressed genes using Fisher’s Exact test as implemented in the topGO R package. For the enrichment analyses of the gene expression changes in astrocytes, our initial analysis revealed very few differentially expressed genes between the uninjured and 1dpi astrocytes, which we attributed to the low numbers of uninjured astrocytes captured. Therefore, we supplemented our uninjured astrocyte dataset with ACNT1 and ACNT2 astrocyte data from the previously published mouse CNS single-cell atlas dataset. We also supplemented our uninjured OPC dataset in order to validate that our uninjured cells were more transcriptional similar to the external reference cells than to our injured cells.</i>
 
+TODO: review documentation - https://bioconductor.org/packages/release/bioc/vignettes/topGO/inst/doc/topGO.pdf
+
 <br>
 
 <h2>10. Differential Expression Tests</h2>
