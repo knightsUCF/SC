@@ -1,3 +1,9 @@
+# Markers / Genes
+
+"A genetic marker is a gene or DNA sequence with a known location on a chromosome that can be used to identify individuals or species. ... A genetic marker may be a short DNA sequence, such as a sequence surrounding a single base-pair change (single nucleotide polymorphism, SNP), or a long one, like minisatellites.
+
+Genetic marker - Wikipedia"
+
 # Seurat / TopGO Workflow
 
 https://rpubs.com/kshekhar/349874
