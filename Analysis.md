@@ -175,6 +175,8 @@ pbmc <- FindNeighbors(
 # DimPlot(pbmc, reduction = "umap") # Plot UMAP, coloring cells by cell type, reticulate::py_install(packages ='umap-learn'), https://github.com/satijalab/seurat/issues/631
 ```
 
+TODO: resolve dependencies
+
 <br>
 
 <h2>5. Finding Clusters</h2>
