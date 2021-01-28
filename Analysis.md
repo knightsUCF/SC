@@ -206,7 +206,7 @@ Elapsed time: 0 seconds
 
 <br>
 
-<h2>Identifying Marker Genes</h2>
+<h2>7. Identifying Marker Genes</h2>
 
 <i>To identify marker genes for each cluster, we used the FindAllMarkers() function, using default parameters, which implements a Wilcoxon Rank Sum test comparing, gene expression of cells within a given cluster versus all other cells.</i>
 
