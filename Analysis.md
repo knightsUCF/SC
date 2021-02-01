@@ -499,6 +499,11 @@ topGOterms = function( fg.genes = NULL,
 }
 ```
 
+<h4> Explore the data (getting ready to process data for topGO)</h4>
+	
+	print(pbmc.cell.type.genes)
+	print(GetAssayData(pbmc, slot = "data"))
+
 
 <br>
 
