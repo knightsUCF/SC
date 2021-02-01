@@ -30,6 +30,6 @@ TODO: review these export settings from
 
 <h3> Ensembl Orthologous </h3>
 
-[Ensembl Orthologous](https://github.com/knightsUCF/SC/blob/main/charts/Ensembl%20Orthologous.png)
+![Ensembl Orthologous](https://github.com/knightsUCF/SC/blob/main/charts/Ensembl%20Orthologous.png)
 
 
