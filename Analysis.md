@@ -527,12 +527,19 @@ topGOterms = function( fg.genes = NULL,
 	KLHL17        . . .        .       . .        . . . .        . .        .        .        . .  
 	...
 
+	row_names = GetAssayData(pbmc, slot = "data")
+
+	pbmc.cell.type.genes <- unique(pbmc.markers$gene) # Takes all the unique cell type specific genes
+
+	GOterms.pbmc = topGOterms(fg.genes = pbmc.cell.type.genes, bg.genes = rownames(row_names), organism = "Mouse")
+
 
 <br>
 
 <h2>10. Differential Expression Tests</h2>
 	
 <i>To account for differences in sequencing depth between our dataset and the external dataset, we performed differential expression tests using MAST as implemented in Seurat. We used all differentially expressed genes (p_val_adj < 0.001) as input for gene ontology analysis.</i>
+
 
 
 
