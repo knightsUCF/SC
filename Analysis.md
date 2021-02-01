@@ -440,6 +440,10 @@ TODO: start on this once the 10X genomics data pipeline processes the custom dat
 
 TODO: review documentation - https://bioconductor.org/packages/release/bioc/vignettes/topGO/inst/doc/topGO.pdf
 
+# to speed up testing time while experimenting, we can bypass the clustering step by saving the data with: pbmc <- readRDS("pdmc.RDS")
+
+
+
 <br>
 
 <h2>10. Differential Expression Tests</h2>
