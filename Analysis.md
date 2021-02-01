@@ -134,6 +134,7 @@ plot(ElbowPlot(pbmc, 15)) # only returns a graph - https://github.com/satijalab/
 
 ![Elbow Plot](https://github.com/knightsUCF/SC/blob/main/charts/Rplot01.png)
 
+
 <br> 
 
 <h2> 3. Finding Neighbors </h2>
@@ -452,6 +453,18 @@ pbmc <- readRDS("pdmc.RDS")
 ```
 
 <br>
+
+<h4>Clustering Chart</h4>
+
+```R
+pbmc <- RunTSNE(object = pbmc, dims.use = 1:10, do.fast = TRUE)
+
+plot(TSNEPlot(object = pbmc))
+```
+
+![Clustering Plot](https://github.com/knightsUCF/SC/blob/main/charts/Clustering.png)
+
+
 
 ```R
 # function to transform Seurat data to topGO data, source: https://github.com/karthikshekhar/CellTypeMIMB/blob/master/utilities.R
