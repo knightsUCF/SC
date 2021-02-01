@@ -9,3 +9,9 @@
 4. For each of 1000 permutations, we randomly shuffled the cell-type and time-point labels and calculated an interaction scores for all possible <ligand cell, receptor cell, time-point> combinations. Repeating this 1000 times generated a null distribution of interaction scores for each ligand-receptor pair.
 
 5. We compared the interaction scores of the actual (ligand cell A, receptor cell B, time-point) labels to the null distribution and calculated p-values as the proportion of null scores which are equal to or greater than the actual interaction score.
+
+
+
+<h2> 1. Getting Mouse Orthologs for Human Ligand-Receptor Pairs </h2>
+
+https://www.ensembl.info/2009/01/21/how-to-get-all-the-orthologous-genes-between-two-species/
