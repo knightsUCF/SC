@@ -24,7 +24,7 @@ We want to get the gene ID.
 
 We assigned to the custom-curated interaction list all the Ensembl gene identifications by matching information from Uniprot and Ensembl by the gene name."</i>
 
-While we are reviewing the paper for the proper gene IDs, we pulled a random mouse orthologous gene to get the data process started: https://github.com/knightsUCF/SC/blob/main/mouse%20orthologous.txt
+
 
 TODO: review these export settings from 
 
@@ -37,4 +37,10 @@ TODO: review these export settings from
 <h3> Ensembl Export Settings </h3>
 
 ![Ensembl Export Settings](https://github.com/knightsUCF/SC/blob/main/charts/Ensembl%20Export%20Settings.png)
+
+<br>
+
+<h3> Mouse Orthologous Data </h3>
+
+While we are reviewing the paper for the proper gene IDs, we pulled a random mouse orthologous gene to get the data process started: https://github.com/knightsUCF/SC/blob/main/mouse%20orthologous.txt
 
