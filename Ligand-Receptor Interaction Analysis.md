@@ -18,3 +18,4 @@ https://www.ensembl.info/2009/01/21/how-to-get-all-the-orthologous-genes-between
 
 Reference paper they used: https://www.nature.com/articles/s41586-018-0698-6
 
+We want to get the gene ID.
