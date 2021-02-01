@@ -499,9 +499,11 @@ print(x = head(x = cluster1.markers, n = 10))
 	HLA-DRA  1.261553e-50
 	HLA-DRB1 2.258447e-49
 
+<h4> Wrapper to transform Seurat data to topGO data</h4>
+
+source: https://github.com/karthikshekhar/CellTypeMIMB/blob/master/utilities.R
 
 ```R
-# function to transform Seurat data to topGO data, source: https://github.com/karthikshekhar/CellTypeMIMB/blob/master/utilities.R
 
 topGOterms = function( fg.genes = NULL,
                        bg.genes = NULL,
