@@ -464,6 +464,40 @@ plot(TSNEPlot(object = pbmc))
 
 ![Clustering Plot](https://github.com/knightsUCF/SC/blob/main/charts/Clustering.png)
 
+<h4> Finding cluster specific markers </h4>
+
+source: https://rstudio-pubs-static.s3.amazonaws.com/349660_87eb2035e4ab465b899e0989bfe15007.html
+
+```R
+cluster1.markers <- FindMarkers(object = pbmc, ident.1 = 1, min.pct = 0.25)
+print(x = head(x = cluster1.markers, n = 10))
+```
+
+<h4> Output </h4>
+
+	|++++++++++++++++++++++++++++++++++++++++++++++++++| 100% elapsed=03s  
+			p_val avg_log2FC pct.1 pct.2
+	IL32     1.894810e-92  1.2080943 0.948 0.464
+	LTB      7.953303e-89  1.2870527 0.981 0.642
+	CD3D     1.655937e-70  0.9285598 0.919 0.431
+	IL7R     3.688893e-68  1.1753754 0.747 0.325
+	LDHB     2.292819e-67  0.9021331 0.950 0.613
+	CD2      2.504468e-61  1.2348322 0.652 0.244
+	AQP3     1.851623e-60  1.2387028 0.422 0.110
+	CD3E     8.015029e-55  0.8665079 0.828 0.409
+	HLA-DRA  9.199012e-55 -3.4415513 0.342 0.609
+	HLA-DRB1 1.646819e-53 -2.5418900 0.180 0.523
+		    p_val_adj
+	IL32     2.598542e-88
+	LTB      1.090716e-84
+	CD3D     2.270951e-66
+	IL7R     5.058947e-64
+	LDHB     3.144372e-63
+	CD2      3.434627e-57
+	AQP3     2.539316e-56
+	CD3E     1.099181e-50
+	HLA-DRA  1.261553e-50
+	HLA-DRB1 2.258447e-49
 
 
 ```R
