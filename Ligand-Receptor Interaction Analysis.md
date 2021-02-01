@@ -26,6 +26,10 @@ We assigned to the custom-curated interaction list all the Ensembl gene identifi
 
 While we are reviewing the paper for the proper gene IDs, we pulled a random mouse orthologous gene to get the data process started: https://github.com/knightsUCF/SC/blob/main/mouse%20orthologous.txt
 
-TODO: review these export settings from Ensembl:
+TODO: review these export settings from 
+
+<h3> Ensembl Orthologous </h3>
+
+[Ensembl Orthologous](https://github.com/knightsUCF/SC/blob/main/charts/Ensembl%20Orthologous.png)
 
 
