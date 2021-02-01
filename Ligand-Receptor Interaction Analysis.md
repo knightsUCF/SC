@@ -25,9 +25,6 @@ We want to get the gene ID.
 We assigned to the custom-curated interaction list all the Ensembl gene identifications by matching information from Uniprot and Ensembl by the gene name."</i>
 
 
-
-TODO: review export settings from Ensembl
-
 <h3> Ensembl Orthologous </h3>
 
 ![Ensembl Orthologous](https://github.com/knightsUCF/SC/blob/main/charts/Ensembl%20Orthologous.png)
@@ -37,6 +34,9 @@ TODO: review export settings from Ensembl
 <h3> Ensembl Export Settings </h3>
 
 ![Ensembl Export Settings](https://github.com/knightsUCF/SC/blob/main/charts/Ensembl%20Export%20Settings.png)
+
+
+TODO: review export settings from Ensembl
 
 <br>
 
