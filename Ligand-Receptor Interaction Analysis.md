@@ -56,6 +56,8 @@ print(head(AverageExpression(object = pbmc)))
 
 <h3>Output</h3>
 
+TODO: verify - https://github.com/satijalab/seurat/issues/193
+
 ```
 $RNA
                                0            1            2            3
