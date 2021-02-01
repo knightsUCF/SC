@@ -46,6 +46,6 @@ While we are reviewing the paper for the proper gene IDs, we pulled a random mou
 
 <br>
 
-<h2> Defining the Ligand-Receptor Score</h2
+<h2>2. Defining the Ligand-Receptor Score</h2
 
 <i>We defined the ligand-receptor score as the mean of the average log-normalized expression of the receptor gene in one cell-type and the average log-normalized expression of the ligand gene in a second cell-type.</i>
