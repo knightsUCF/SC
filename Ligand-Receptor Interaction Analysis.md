@@ -23,3 +23,9 @@ We want to get the gene ID.
 "Linking Ensembl and Uniprot identification
 
 We assigned to the custom-curated interaction list all the Ensembl gene identifications by matching information from Uniprot and Ensembl by the gene name."
+
+While we are reviewing the paper for the proper gene IDs, we pulled a random mouse orthologous gene to get the data process started: https://github.com/knightsUCF/SC/blob/main/mouse%20orthologous.txt
+
+TODO: review these export settings from Ensembl:
+
+
