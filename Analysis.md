@@ -540,7 +540,4 @@ topGOterms = function( fg.genes = NULL,
 	
 <i>To account for differences in sequencing depth between our dataset and the external dataset, we performed differential expression tests using MAST as implemented in Seurat. We used all differentially expressed genes (p_val_adj < 0.001) as input for gene ontology analysis.</i>
 
-
-
-
-
+<h4> topGO documentation: https://bioconductor.org/packages/release/bioc/vignettes/topGO/inst/doc/topGO.pdf</h4>
