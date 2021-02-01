@@ -1,4 +1,4 @@
-# Analysis
+# Dimensional Reduction, Clustering, and Differential Gene expression testing
 
 <br>
 
