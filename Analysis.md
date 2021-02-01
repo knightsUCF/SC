@@ -502,7 +502,30 @@ topGOterms = function( fg.genes = NULL,
 <h4> Explore the data (getting ready to process data for topGO)</h4>
 	
 	print(pbmc.cell.type.genes)
+	
+<h4> Output </h4?
+	
+	   [1] "RPS12"              "RPS27"              "RPS6"               "RPL32"             
+	   [5] "RPS14"              "CYBA"               "RPS25"              "RPL9"              
+	   [9] "CD74"               "RPL13"              "RPL31"              "RPS3"              
+	  [13] "HLA-DRB1"           "RPL3"               "RPL21"              "RPS3A"             
+	  [17] "RPL30"              "LDHB"               "HLA-DRA"            "HLA-DPB1"          
+	  [21] "S100A4"             "RPS15A"             "RPLP2"              "HLA-DPA1" 
+	  ...
+	 
+	  
 	print(GetAssayData(pbmc, slot = "data"))
+	
+<h4> Output </h4>
+
+	AL627309.1    . . .        .       . .        . . . .        . .        .        .        . .       
+	AP006222.2    . . .        .       . .        . . . .        . .        .        .        . .       
+	RP11-206L10.2 . . .        .       . .        . . . .        . .        .        .        . .       
+	RP11-206L10.9 . . .        .       . .        . . . .        . .        .        .        . .       
+	LINC00115     . . .        .       . .        . . . .        . .        .        .        . .       
+	NOC2L         . . .        .       . .        . . . .        . 1.646272 .        .        . .       
+	KLHL17        . . .        .       . .        . . . .        . .        .        .        . .  
+	...
 
 
 <br>
