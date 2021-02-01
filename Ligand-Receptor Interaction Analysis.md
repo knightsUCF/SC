@@ -26,7 +26,7 @@ We assigned to the custom-curated interaction list all the Ensembl gene identifi
 
 
 
-TODO: review these export settings from 
+TODO: review export settings from Ensembl
 
 <h3> Ensembl Orthologous </h3>
 
