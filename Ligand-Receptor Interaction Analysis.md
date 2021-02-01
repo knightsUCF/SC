@@ -49,3 +49,43 @@ While we are reviewing the paper for the proper gene IDs, we pulled a random mou
 <h2>2. Defining the Ligand-Receptor Score</h2
 
 <i>We defined the ligand-receptor score as the mean of the average log-normalized expression of the receptor gene in one cell-type and the average log-normalized expression of the ligand gene in a second cell-type.</i>
+
+```R
+print(head(AverageExpression(object = pbmc)))
+```
+
+<h3>Output</h3>
+
+```
+$RNA
+                               0            1            2            3
+AL627309.1          6.128664e-03 5.927264e-03 4.854338e-02 0.000000e+00
+AP006222.2          0.000000e+00 8.206078e-03 1.088471e-02 0.000000e+00
+RP11-206L10.2       7.453092e-03 0.000000e+00 0.000000e+00 2.065031e-02
+RP11-206L10.9       0.000000e+00 0.000000e+00 1.050116e-02 0.000000e+00
+LINC00115           1.911893e-02 2.469048e-02 3.753737e-02 3.888541e-02
+NOC2L               4.974632e-01 3.598115e-01 2.725375e-01 5.865349e-01
+...
+
+                               4            5            6            7
+AL627309.1          2.054586e-02 0.000000e+00   0.00000000   0.00000000
+AP006222.2          1.191488e-02 0.000000e+00   0.00000000   0.00000000
+RP11-206L10.2       0.000000e+00 0.000000e+00   0.00000000   0.08462847
+RP11-206L10.9       0.000000e+00 1.200008e-02   0.00000000   0.00000000
+LINC00115           1.948277e-02 1.469374e-02   0.05855154   0.00000000
+
+
+                             8
+AL627309.1            0.0000000
+AP006222.2            0.0000000
+RP11-206L10.2         0.0000000
+RP11-206L10.9         0.0000000
+LINC00115             0.0000000
+NOC2L                 0.0000000
+KLHL17                0.0804829
+PLEKHN1               0.0000000
+RP11-54O7.17          0.0000000
+HES4                  0.1609658
+...
+
+'''
