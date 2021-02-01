@@ -499,6 +499,8 @@ print(x = head(x = cluster1.markers, n = 10))
 	HLA-DRA  1.261553e-50
 	HLA-DRB1 2.258447e-49
 
+The p values will be important for the topGO data.
+
 <br>
 
 <h4> Wrapper to transform Seurat data to topGO data</h4>
