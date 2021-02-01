@@ -91,3 +91,9 @@ HES4                  0.1609658
 ...
 
 ```
+
+<br>
+
+<h2>3. Identifying enriched ligand-receptor interactions</h2>
+
+<i>To identify enriched ligand-receptor interactions, we applied a permutation test to identify interactions scores that are enriched in a specific <ligand cell A, receptor cell B, time-point> combination.</i>
