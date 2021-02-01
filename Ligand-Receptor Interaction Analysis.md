@@ -36,6 +36,5 @@ TODO: review these export settings from
 
 <h3> Ensembl Export Settings </h3>
 
-
-
+![Ensembl Export Settings](https://github.com/knightsUCF/SC/blob/main/charts/Ensembl%20Export%20Settings.png)
 
