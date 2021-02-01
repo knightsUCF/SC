@@ -613,7 +613,7 @@ cluster1.markers.MAST <- FindMarkers(object = pbmc, ident.1 = 1, min.pct = 0.25,
 print(x = head(x = cluster1.markers.MAST, n = 10))
 ```
 
-TODO: review documentation for MAST
+TODO: review documentation for MAST, review what else is needed for this section
 
 <h4>Output</h4>
 
