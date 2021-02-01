@@ -503,7 +503,7 @@ topGOterms = function( fg.genes = NULL,
 	
 	print(pbmc.cell.type.genes)
 	
-<h4> Output </h4?
+<h4> Output </h4>
 	
 	   [1] "RPS12"              "RPS27"              "RPS6"               "RPL32"             
 	   [5] "RPS14"              "CYBA"               "RPS25"              "RPL9"              
