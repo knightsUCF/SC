@@ -10,7 +10,7 @@
 
 5. We compared the interaction scores of the actual (ligand cell A, receptor cell B, time-point) labels to the null distribution and calculated p-values as the proportion of null scores which are equal to or greater than the actual interaction score.
 
-
+<br>
 
 <h2> 1. Getting Mouse Orthologs for Human Ligand-Receptor Pairs </h2>
 
