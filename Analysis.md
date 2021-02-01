@@ -451,6 +451,8 @@ saveRDS(pbmc, file = "pbmc.RDS") # run at the end of the clustering step, or whe
 pbmc <- readRDS("pdmc.RDS")
 ```
 
+<br>
+
 ```R
 # function to transform Seurat data to topGO data, source: https://github.com/karthikshekhar/CellTypeMIMB/blob/master/utilities.R
 
