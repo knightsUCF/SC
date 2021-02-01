@@ -440,7 +440,10 @@ TODO: start on this once the 10X genomics data pipeline processes the custom dat
 
 TODO: review documentation - https://bioconductor.org/packages/release/bioc/vignettes/topGO/inst/doc/topGO.pdf
 
-	To speed up testing time while experimenting, we can bypass the clustering step by saving the data with: pbmc <- readRDS("pdmc.RDS")
+	To speed up testing time while experimenting, we can bypass the clustering step by saving the data with:
+	saveRDS(pbmc, file = "pbmc.RDS") # run at the end of the clustering step, or when having our final Seurat data object, on which we don't want to run operations which take a long time
+	# then we can load the Suerat data object with:
+	pbmc <- readRDS("pdmc.RDS")
 
 ```R
 # function to transform Seurat data to topGO data, source: https://github.com/karthikshekhar/CellTypeMIMB/blob/master/utilities.R
