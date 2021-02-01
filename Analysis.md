@@ -445,7 +445,7 @@ TODO: review documentation - https://bioconductor.org/packages/release/bioc/vign
 To speed up testing time while experimenting, we can bypass the clustering step by saving the data with:
 
 ```R
-saveRDS(pbmc, file = "pbmc.RDS") # run at the end of the clustering step, or when having our final Seurat data object, on which we don't want to run operations which take a long time
+saveRDS(pbmc, file = "pbmc.RDS")
 
 # then we can load the Suerat data object with:
 pbmc <- readRDS("pdmc.RDS")
