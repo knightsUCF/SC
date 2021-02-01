@@ -20,9 +20,9 @@ Reference paper they used: https://www.nature.com/articles/s41586-018-0698-6
 
 We want to get the gene ID.
 
-"Linking Ensembl and Uniprot identification
+<i>"Linking Ensembl and Uniprot identification
 
-We assigned to the custom-curated interaction list all the Ensembl gene identifications by matching information from Uniprot and Ensembl by the gene name."
+We assigned to the custom-curated interaction list all the Ensembl gene identifications by matching information from Uniprot and Ensembl by the gene name."</i>
 
 While we are reviewing the paper for the proper gene IDs, we pulled a random mouse orthologous gene to get the data process started: https://github.com/knightsUCF/SC/blob/main/mouse%20orthologous.txt
 
