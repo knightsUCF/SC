@@ -458,7 +458,6 @@ pbmc <- readRDS("pdmc.RDS")
 
 ```R
 pbmc <- RunTSNE(object = pbmc, dims.use = 1:10, do.fast = TRUE)
-
 plot(TSNEPlot(object = pbmc))
 ```
 
