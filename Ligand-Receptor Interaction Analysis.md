@@ -118,3 +118,16 @@ https://rdrr.io/github/kendomaniac/rCASC/man/seuratPermutation.html
       nPerm=160, permAtTime=8, percent=10, separator="\t",
       logTen=0, pcaDimensions=6, seed=111)
 ```
+<br>
+
+<h2>4. Calculating interaction scores</h2>
+
+<i>For each of 1000 permutations, we randomly shuffled the cell-type and time-point labels and calculated an interaction scores for all possible <ligand cell, receptor cell, time-point> combinations. Repeating this 1000 times generated a null distribution of interaction scores for each ligand-receptor pair.</i>
+  
+ TODO
+ 
+ <br>
+ 
+ <h2>5. Comparing interaction scores</h2>
+ 
+ <i>We compared the interaction scores of the actual (ligand cell A, receptor cell B, time-point) labels to the null distribution and calculated p-values as the proportion of null scores which are equal to or greater than the actual interaction score.</i>
