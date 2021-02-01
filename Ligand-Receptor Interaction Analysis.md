@@ -44,3 +44,8 @@ TODO: review these export settings from
 
 While we are reviewing the paper for the proper gene IDs, we pulled a random mouse orthologous gene to get the data process started: https://github.com/knightsUCF/SC/blob/main/mouse%20orthologous.txt
 
+<br>
+
+<h2> Defining the Ligand-Receptor Score</h2
+
+<i>We defined the ligand-receptor score as the mean of the average log-normalized expression of the receptor gene in one cell-type and the average log-normalized expression of the ligand gene in a second cell-type.</i>
