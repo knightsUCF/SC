@@ -447,7 +447,7 @@ To speed up testing time while experimenting, we can bypass the clustering step 
 ```R
 saveRDS(pbmc, file = "pbmc.RDS")
 
-# then we can load the Suerat data object with:
+# then we can load the Seurat data object with:
 pbmc <- readRDS("pdmc.RDS")
 ```
 
