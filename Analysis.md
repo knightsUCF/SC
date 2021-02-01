@@ -608,4 +608,44 @@ print(GetAssayData(pbmc, slot = "data"))
 	
 <i>To account for differences in sequencing depth between our dataset and the external dataset, we performed differential expression tests using MAST as implemented in Seurat. We used all differentially expressed genes (p_val_adj < 0.001) as input for gene ontology analysis.</i>
 
+```R
+cluster1.markers.MAST <- FindMarkers(object = pbmc, ident.1 = 1, min.pct = 0.25, test.use = "MAST")
+print(x = head(x = cluster1.markers.MAST, n = 10))
+```
+
+TODO: review documentation for MAST
+
+<h4>Output</h4>
+
+	one!
+	Combining coefficients and standard errors
+	Calculating log-fold changes
+	Calculating likelihood ratio tests
+	Refitting on reduced model...
+
+	Done!
+			 p_val avg_log2FC pct.1 pct.2
+	IL32     8.420830e-107  1.2080943 0.948 0.464
+	LTB      3.154315e-100  1.2870527 0.981 0.642
+	CD3D      2.169751e-95  0.9285598 0.919 0.431
+	HLA-DRA   6.649121e-90 -3.4415513 0.342 0.609
+	TYROBP    2.707600e-88 -3.5261372 0.130 0.458
+	HLA-DRB1  1.390605e-74 -2.5418900 0.180 0.523
+	LDHB      8.892460e-74  0.9021331 0.950 0.613
+	HLA-DPA1  2.298777e-73 -2.4532950 0.261 0.546
+	CST3      4.950010e-73 -3.3043798 0.226 0.437
+	CD74      5.015851e-73 -2.3783641 0.830 0.847
+		     p_val_adj
+	IL32     1.154833e-102
+	LTB       4.325827e-96
+	CD3D      2.975596e-91
+	HLA-DRA   9.118604e-86
+	TYROBP    3.713202e-84
+	HLA-DRB1  1.907076e-70
+	LDHB      1.219512e-69
+	HLA-DPA1  3.152543e-69
+	CST3      6.788443e-69
+	CD74      6.878738e-69
+
+
 
