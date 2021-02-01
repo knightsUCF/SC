@@ -131,3 +131,5 @@ https://rdrr.io/github/kendomaniac/rCASC/man/seuratPermutation.html
  <h2>5. Comparing interaction scores</h2>
  
  <i>We compared the interaction scores of the actual (ligand cell A, receptor cell B, time-point) labels to the null distribution and calculated p-values as the proportion of null scores which are equal to or greater than the actual interaction score.</i>
+ 
+ TODO
