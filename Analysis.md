@@ -524,9 +524,12 @@ topGOterms = function( fg.genes = NULL,
 	  [21] "S100A4"             "RPS15A"             "RPLP2"              "HLA-DPA1" 
 	  ...
 	 
-	  
-	print(GetAssayData(pbmc, slot = "data"))
-	
+<br>
+
+```R
+print(GetAssayData(pbmc, slot = "data"))
+```
+
 <h4> Output </h4>
 
 	AL627309.1    . . .        .       . .        . . . .        . .        .        .        . .       
