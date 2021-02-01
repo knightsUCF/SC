@@ -32,4 +32,10 @@ TODO: review these export settings from
 
 ![Ensembl Orthologous](https://github.com/knightsUCF/SC/blob/main/charts/Ensembl%20Orthologous.png)
 
+<br>
+
+<h3> Ensembl Export Settings </h3>
+
+
+
 
