@@ -1,2 +1,4 @@
+getting started with R: https://swcarpentry.github.io/r-novice-inflammation/02-func-R/
+
 great Seurat tutorial: https://scrnaseq-course.cog.sanger.ac.uk/website/seurat-chapter.html
 
