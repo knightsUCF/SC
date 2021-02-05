@@ -1,3 +1,5 @@
+the Cran repo will be different based on the version of Ubuntu
+
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install curl
