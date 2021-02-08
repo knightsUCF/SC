@@ -252,6 +252,29 @@ get_rna_feature <- function(seurat_object, feature_name) {
 
 
 show_available_seurat_methods <- function() {
+    # output
+
+    # [: access expression data from the data slot
+    # [[: access feature-level metadata
+    # [[<-: add feature-level metadata
+    # colMeans: calculate means across columns (cells) of any expression matrix within the Assay
+    # colSums: calculate sums across columns (cells) of any expression matrix within the Assay
+    # dimnames: get a list with row (feature) and column (cell) names
+    # dim: get the number of features (in data) and cells in the Assay
+    # GetAssayData: pull one of the expression matrices within the Assay
+    # HVFInfo:
+    # Key: get the key assigned to the Assay
+    # Key<-: ...
+    # merge: ...
+    # RenameCells: ...
+    # rowMeans: calculate means across rows (features) of any expression matrix within the Assay
+    # rowSums: calculate sums across rows (features) of any expression matrix within the Assay
+    # SetAssayData: add data to or replace one of the expresion matrices within the Assay
+    # SubsetData: ...
+    # VariableFeatures: pull the names of features designated as variable
+    # VariableFeatures<-: assign a vector of features that are considered variable
+    # WhichCells: ...
+
     print(utils::methods(class = 'Assay'))
 }
 
