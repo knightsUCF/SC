@@ -151,7 +151,7 @@ get_rna_row_data <- function(seurat_object) {
 }
 
 
-# we are repeating ourselves here, but for now both method names will be useful
+# we are repeating ourselves here, but for now both method names will be useful to show how the data is structured
 
 get_genes <- function(seurat_object) {
     # output
