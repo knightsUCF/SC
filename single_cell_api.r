@@ -143,7 +143,16 @@ get_rna_row_names <- function(seurat_object) {
     # [1] "AL627309.1"    "AP006222.2"    "RP11-206L10.2" "RP11-206L10.9"
     # [5] "LINC00115"     "NOC2L"
     rna = seurat_object[['RNA']]
-    return (head(x = rownames(x = rna)))
+    return (x = rownames(x = rna))
+}
+
+
+get_rna_column_names <- function(seurat_object) {
+    # output
+    # [1] "AAACATACAACCAC" "AAACATTGAGCTAC" "AAACATTGATCAGC" "AAACCGTGCTTCCG"
+    # [5] "AAACCGTGTATGCG" "AAACGCACTGGTAC"
+    rna = seurat_object[['RNA']]
+    return (x = colnames(x = rna))
 }
 
 
@@ -227,4 +236,11 @@ so = load_data()
 # print(get_slot_names(so))
 # print(get_assays(so))
 # print(get_assay_data(so, 'scale.data', 1, 3, 1, 3))
+
+
+
+
+
+print(get_rna_row_names(so))
+
 
