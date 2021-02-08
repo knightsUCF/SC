@@ -140,6 +140,8 @@ get_rna_dimensions <- function(seurat_object) {
 }
 
 
+
+
 get_rna_row_data <- function(seurat_object) {
     # output
     # [1] "AL627309.1"    "AP006222.2"    "RP11-206L10.2" "RP11-206L10.9"
@@ -149,6 +151,18 @@ get_rna_row_data <- function(seurat_object) {
 }
 
 
+# we are repeating ourselves here, but for now both method names will be useful
+
+get_genes <- function(seurat_object) {
+    # output
+    # [1] "AL627309.1"    "AP006222.2"    "RP11-206L10.2" "RP11-206L10.9"
+    # [5] "LINC00115"     "NOC2L"
+    rna = seurat_object[['RNA']]
+    return (x = rownames(x = rna))
+}
+
+
+
 get_rna_column_data <- function(seurat_object) {
     # output
     # [1] "AAACATACAACCAC" "AAACATTGAGCTAC" "AAACATTGATCAGC" "AAACCGTGCTTCCG"
@@ -156,6 +170,16 @@ get_rna_column_data <- function(seurat_object) {
     rna = seurat_object[['RNA']]
     return (x = colnames(x = rna))
 }
+
+
+get_gene_sequence <- function(seurat_object) {
+    # output
+    # [1] "AAACATACAACCAC" "AAACATTGAGCTAC" "AAACATTGATCAGC" "AAACCGTGCTTCCG"
+    # [5] "AAACCGTGTATGCG" "AAACGCACTGGTAC"
+    rna = seurat_object[['RNA']]
+    return (x = colnames(x = rna))
+}
+
 
 
 get_rna_data_by_column_and_row <- function(seurat_object, start_row, end_row, start_column, end_column) {
@@ -362,3 +386,4 @@ so = load_data()
 
 
 
+print(get_genes(so))
