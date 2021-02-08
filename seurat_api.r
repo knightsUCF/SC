@@ -85,7 +85,7 @@ get_available_cell_level_meta_data <- function(seurat_object) {
 
 get_multiple_cell_level_meta_data_values <- function(seurat_object) {
         # returns just the top with head
-	# replace with parameters from get_available_cell_level_meta_data(), hardcoded for because we can specify multiple parameters
+	# replace with parameters from get_available_cell_level_meta_data(), hardcoded for now because we can specify multiple parameters
 	# output
 	#                nUMI percent.mito
 	# AAACATACAACCAC 2421  0.030177759
