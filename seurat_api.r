@@ -199,28 +199,17 @@ analyze <- function(seurat_object) {
 
 
 
-
+# save once
 # so = analyze(load_and_process_seurat_object())
 # save_data(so)
 
-
+# then reload to save time
 so = load_data()
 
-# print(so)
-
-
-
-
+# access seurat object data features
 output_seurat_object_data_features(so)
-
-
 print(get_slot_names(so))
-
-
-
 print(get_assays(so))
-
-
 print(get_assay_data(so, 'scale.data', 1, 3, 1, 3))
 
 
