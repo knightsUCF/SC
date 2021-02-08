@@ -138,7 +138,7 @@ get_rna_dimensions <- function(seurat_object) {
 }
 
 
-get_rna_row_names <- function(seurat_object) {
+get_rna_row_data <- function(seurat_object) {
     # output
     # [1] "AL627309.1"    "AP006222.2"    "RP11-206L10.2" "RP11-206L10.9"
     # [5] "LINC00115"     "NOC2L"
@@ -147,13 +147,68 @@ get_rna_row_names <- function(seurat_object) {
 }
 
 
-get_rna_column_names <- function(seurat_object) {
+get_rna_column_data <- function(seurat_object) {
     # output
     # [1] "AAACATACAACCAC" "AAACATTGAGCTAC" "AAACATTGATCAGC" "AAACCGTGCTTCCG"
     # [5] "AAACCGTGTATGCG" "AAACGCACTGGTAC"
     rna = seurat_object[['RNA']]
     return (x = colnames(x = rna))
 }
+
+
+get_rna_data_by_column_and_row <- function(seurat_object, start_row, end_row, start_column, end_column) {
+    # output:
+    # 3 x 3 sparse Matrix of class "dgCMatrix"
+    #          AAACATACAACCAC AAACATTGAGCTAC AAACATTGATCAGC
+    # AL627309.1                 .              .              .
+    # AP006222.2                 .              .              .
+    # RP11-206L10.2   
+    rna = seurat_object[['RNA']]
+    return (rna[start_row:end_row, start_column:end_column])
+}
+
+
+get_rna_data_from_specific_slot <- function(seurat_object, slot_name, start_row, end_row, start_column, end_column) {
+    # slot name = 'scale.data'
+    # output:
+    #              AAACATACAACCAC AAACATTGAGCTAC AAACATTGATCAGC
+    # AL627309.1       -0.06547546    -0.10052277    -0.05804007
+    # AP006222.2       -0.02690776    -0.02820169    -0.04508318
+    # RP11-206L10.2    -0.03596234    -0.17689415    -0.09997719
+    rna = seurat_object[['RNA']]
+    return (GetAssayData(object = rna, slot = 'scale.data')[start_row:end_row, start_column:end_column])
+}
+
+
+get_rna_available_column_meta_data <- function(seurat_object) {
+    # output
+    # [1] "mean"              "dispersion"        "dispersion.scaled"
+    rna = seurat_object[['RNA']]
+    return (colnames(x = rna[[]]))
+}
+
+
+get_rna_mean_dispersion_and_dispersion_scaled <- function(seurat_object) {
+    # output
+    #                     mean dispersion dispersion.scaled
+    # AL627309.1    0.013555659   1.432845        -0.6236875
+    # AP006222.2    0.004695980   1.458631        -0.5728009
+    # RP11-206L10.2 0.005672517   1.325459        -0.8356099
+    # can pull specific values with: (x = rna[[c('mean', 'dispersion')]]
+    # also can turn into a name vector with: head(x = rna[['mean', drop = TRUE]])
+    rna = seurat_object[['RNA']]
+    return (x = HVFInfo(object = rna))
+}
+
+
+get_rna_variable_features <- function(seurat_object) {
+    # output
+    # [1] "PPBP"   "DOK3"   "NFE2L2" "ARVCF"  "YPEL2"  "UBE2D4"
+    rna = seurat_object[['RNA']]
+    return (x = VariableFeatures(object = rna)
+}
+
+
 
 
 
@@ -241,6 +296,5 @@ so = load_data()
 
 
 
-print(get_rna_row_names(so))
 
 
