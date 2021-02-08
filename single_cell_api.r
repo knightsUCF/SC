@@ -211,10 +211,49 @@ get_rna_variable_features <- function(seurat_object) {
 }
 
 
+set_rna_key <- function(seurat_object, key_name) {
+    # output
+    # "myRNA_"
+    rna = seurat_object[['RNA']]
+    Key(object = rna) <- key_name
+    return (Key(object = rna))
+}
+
+
+access_rna_key <- function(seurat_object) {
+    # output
+    # "rna_"
+    rna = seurat_object[['RNA']]
+    return (Key(object = rna))
+}
+
+
+get_rna_feature <- function(seurat_object, feature_name) {
+    # output
+    # feature_name = 'rna_MS4A1'
+    #               rna_MS4A1
+    # AAACATACAACCAC  0.000000
+    # AAACATTGAGCTAC  2.583047
+    # AAACATTGATCAGC  0.000000
+    # AAACCGTGCTTCCG  0.000000
+    # AAACCGTGTATGCG  0.000000
+    # AAACGCACTGGTAC  0.000000
+    return (x = FetchData(object = seurat_object, vars.fetch = feature_name))
+}
+
+
+
+
 
 
 
 # S E U R A T  A P I  ###########################################################################
+
+
+
+show_available_seurat_methods <- function() {
+    print(utils::methods(class = 'Assay'))
+}
 
 
 load_and_process_seurat_object <- function() {
