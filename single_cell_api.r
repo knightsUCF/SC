@@ -178,7 +178,6 @@ get_gene_sequence <- function(seurat_object) {
 }
 
 
-
 get_rna_data_by_column_and_row <- function(seurat_object, start_row, end_row, start_column, end_column) {
     # output:
     # 3 x 3 sparse Matrix of class "dgCMatrix"
