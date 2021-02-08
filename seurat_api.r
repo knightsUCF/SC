@@ -58,7 +58,7 @@ get_rna <- function(seurat_object) {
 }
 
 
-get_pca <- function(seurat_object) {
+get_tsne <- function(seurat_object) {
 	# output
 	# A dimensional reduction object with key tSNE_
  	# Number of dimensions: 2
