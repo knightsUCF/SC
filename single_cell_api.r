@@ -47,15 +47,6 @@ get_assays <- function(seurat_object) {
 }
 
 
-get_rna <- function(seurat_object) {
-	# output
-	# Assay data with 13714 features for 2638 cells
-	# Top 10 variable features:
- 	# PPBP, DOK3, NFE2L2, ARVCF, YPEL2, UBE2D4, FAM210B, CTB-113I20.2, GBGT1, GMPPA
-	return (seurat_object[['RNA']])
-}
-
-
 get_tsne <- function(seurat_object) {
 	# output
 	# A dimensional reduction object with key tSNE_
@@ -127,6 +118,33 @@ get_standard_deviations <- function(seurat_object) {
 	return (Stdev(object = seurat_object, reduction.use = 'pca'))
 }
 
+# R N A ########################################################################################
+
+
+get_rna <- function(seurat_object) {
+	# output
+	# Assay data with 13714 features for 2638 cells
+	# Top 10 variable features:
+ 	# PPBP, DOK3, NFE2L2, ARVCF, YPEL2, UBE2D4, FAM210B, CTB-113I20.2, GBGT1, GMPPA
+	return (seurat_object[['RNA']])
+}
+
+
+get_rna_dimensions <- function(seurat_object) {
+    # output
+    # [1] 13714  2638
+    rna = seurat_object[['RNA']]
+    return (dim(x = rna))
+}
+
+
+get_rna_row_names <- function(seurat_object) {
+    # output
+    # [1] "AL627309.1"    "AP006222.2"    "RP11-206L10.2" "RP11-206L10.9"
+    # [5] "LINC00115"     "NOC2L"
+    rna = seurat_object[['RNA']]
+    return (head(x = rownames(x = rna)))
+}
 
 
 
@@ -205,11 +223,8 @@ analyze <- function(seurat_object) {
 so = load_data()
 
 # access seurat object data features
-output_seurat_object_data_features(so)
-print(get_slot_names(so))
-print(get_assays(so))
-print(get_assay_data(so, 'scale.data', 1, 3, 1, 3))
-
-
-
+# output_seurat_object_data_features(so)
+# print(get_slot_names(so))
+# print(get_assays(so))
+# print(get_assay_data(so, 'scale.data', 1, 3, 1, 3))
 
