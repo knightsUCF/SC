@@ -115,7 +115,7 @@ get_variable_features <- function(seurat_object) {
 	# note: VariableFeatures both accesses and sets the vector of variable features
 	# output:
 	# [1] "PPBP"   "DOK3"   "NFE2L2" "ARVCF"  "YPEL2"  "UBE2D4"
-	return head(x = VariableFeatures(object = seurat_object))
+	return (head(x = VariableFeatures(object = seurat_object)))
 }
 
 
