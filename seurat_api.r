@@ -9,8 +9,6 @@ library(ggplot2)
 # D A T A  H A N D L I N G  #####################################################################
 
 
-# for speeding up workflow, we can save and load the Seurat object, without having to rerun clustering
-
 save_data <- function(data) {
         saveRDS(data, file = "SeuratObject.RDS")
 }
