@@ -253,7 +253,6 @@ get_rna_feature <- function(seurat_object, feature_name) {
 
 show_available_seurat_methods <- function() {
     # output
-
     # [: access expression data from the data slot
     # [[: access feature-level metadata
     # [[<-: add feature-level metadata
