@@ -140,8 +140,6 @@ get_rna_dimensions <- function(seurat_object) {
 }
 
 
-
-
 get_rna_row_data <- function(seurat_object) {
     # output
     # [1] "AL627309.1"    "AP006222.2"    "RP11-206L10.2" "RP11-206L10.9"
@@ -160,7 +158,6 @@ get_genes <- function(seurat_object) {
     rna = seurat_object[['RNA']]
     return (x = rownames(x = rna))
 }
-
 
 
 get_rna_column_data <- function(seurat_object) {
