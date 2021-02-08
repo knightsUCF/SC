@@ -207,7 +207,7 @@ get_rna_variable_features <- function(seurat_object) {
     # output
     # [1] "PPBP"   "DOK3"   "NFE2L2" "ARVCF"  "YPEL2"  "UBE2D4"
     rna = seurat_object[['RNA']]
-    return (x = VariableFeatures(object = rna)
+    return (x = VariableFeatures(object = rna))
 }
 
 
